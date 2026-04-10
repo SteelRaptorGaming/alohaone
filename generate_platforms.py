@@ -529,19 +529,20 @@ PLATFORMS = {
     "icon": "fa-shield-alt",
     "gradient": "linear-gradient(135deg,#14b8a6,#0d9488)",
     "status": "live",
-    "tagline": "Every file. Every device. Always safe.",
-    "description": "Continuous encrypted backup across Windows, macOS, Linux, iOS, and Android. Restore anywhere, anytime. Free tier includes 1 device and 5 GB — no credit card required.",
-    "overview": "AlohaBackup runs silently on every device you own. Filesystem watchers catch every change the instant it happens, content-addressed chunking deduplicates automatically across your whole account, and AES-256 encryption keeps everything safe before it leaves your machine. Lose a device, break a laptop, get hit by ransomware — pull any file from any point in history onto any other registered device in seconds. Pair it with AlohaDrive when you also need to actively browse, share, or work with files day-to-day — Backup is your safety net for whole devices, Drive is your filing cabinet for active files.",
+    "tagline": "Set-and-forget device protection. Recover anything, anytime.",
+    "description": "Install the agent on every device you want protected, point it at the folders that matter, and walk away. AlohaBackup quietly scans on a schedule, encrypts everything with AES-256, and keeps your data safe until you need it. Restore through the web portal anytime. Free tier includes 1 device and 5 GB — no credit card required.",
+    "overview": "AlohaBackup is set-and-forget device protection. Install the agent on every device you want protected, point it at the folders that matter, and walk away — AlohaBackup quietly scans on a schedule, uploads what's changed, and keeps everything encrypted with AES-256 and content-addressed deduplication. When you need to restore, log into the web portal from any browser, browse the backup tree across all your protected devices, and download the file or folder you need. No constant notifications, no live sync, no taking up your screen — just a quiet safety net that's there when something breaks. Pair it with AlohaDrive when you also need to actively browse, share, or work with files day-to-day — Backup is your safety net for whole devices, Drive is your filing cabinet for active files.",
     "capabilities": [
         {
-            "title": "Continuous Backup",
-            "icon": "fa-sync",
+            "title": "Set-and-Forget Protection",
+            "icon": "fa-shield-halved",
             "gradient": "linear-gradient(135deg,#14b8a6,#0d9488)",
             "items": [
-                "Filesystem watchers — no scheduled jobs",
-                "Content-addressed chunking (SHA-256 dedup)",
-                "Smart 4-8 MB chunks to minimize bandwidth",
-                "Include and exclude glob patterns",
+                "Install the agent once on every device you want protected",
+                "Choose which folders to protect on each device",
+                "Periodic background scans on a schedule you set",
+                "Content-addressed chunking (SHA-256 dedup) keeps bandwidth low",
+                "Include and exclude glob patterns for fine control",
                 "Cross-platform: Windows, macOS, Linux, iOS, Android",
                 "Daemon and CLI modes for servers",
             ]
@@ -560,15 +561,15 @@ PLATFORMS = {
             ]
         },
         {
-            "title": "Restore Anywhere",
-            "icon": "fa-download",
+            "title": "Restore via Web Portal",
+            "icon": "fa-cloud-arrow-down",
             "gradient": "linear-gradient(135deg,#8b5cf6,#7c3aed)",
             "items": [
-                "Restore files to any registered device",
+                "Log in from any browser to recover your files",
+                "Browse the backup tree across every protected device",
                 "File-level or folder-level restore",
                 "Version history (7-365 days by tier)",
                 "Priority restore on Pro and Enterprise",
-                "Browse all backed-up files online",
                 "Download single files or ZIP exports",
             ]
         },
@@ -862,6 +863,111 @@ PLATFORMS = {
         "primary_href": "../../AlohaOneApp/index.html?platform=drive&intent=register",
         "secondary_label": "How is this different from AlohaBackup?",
         "secondary_href": "backup.html",
+    },
+},
+
+# ---------------- AlohaCMS ----------------
+"cms": {
+    "name": "AlohaCMS",
+    "icon": "fa-window-maximize",
+    "gradient": "linear-gradient(135deg,#fb7185,#be123c)",
+    "status": "coming",
+    "tagline": "Build a website that grows with your business — with or without a storefront.",
+    "description": "A modern content management system and website builder. Pages, blog, themes, forms, SEO, and a media library that connects directly to AlohaDrive. When you're ready to sell, enable AlohaCommerce on the same site and you have a storefront.",
+    "overview": "AlohaCMS is the website-building half of the AlohaOne ecosystem, paired bidirectionally with AlohaCommerce. Build a marketing site, blog, knowledge hub, or landing-page collection with a drag-and-drop page builder, a gallery of themes, and a section-based layout system. Capture leads with forms, optimize for search, and manage your media library straight from AlohaDrive. When you're ready to sell, flip a switch to enable AlohaCommerce on the same site and your storefront, catalog, checkout, and orders are all wired in. Conversely, an existing AlohaCommerce store can enable AlohaCMS to add a marketing site, blog, and content pages alongside the store.",
+    "capabilities": [
+        {
+            "title": "Pages & Page Builder",
+            "icon": "fa-window-maximize",
+            "gradient": "linear-gradient(135deg,#fb7185,#be123c)",
+            "items": [
+                "Drag-and-drop visual page builder",
+                "Section-based layout with reusable blocks",
+                "Custom URL slugs and SEO metadata per page",
+                "Mobile-responsive by default",
+                "Live preview as you edit",
+                "Draft, schedule, and publish workflows",
+            ]
+        },
+        {
+            "title": "Themes & Branding",
+            "icon": "fa-palette",
+            "gradient": "linear-gradient(135deg,#8b5cf6,#7c3aed)",
+            "items": [
+                "Gallery of pre-built themes for common industries",
+                "Theme settings for colors, fonts, spacing",
+                "Custom CSS and code injection when you need it",
+                "Light and dark mode support",
+                "Brand kit reused across every page",
+                "Switch themes without losing content",
+            ]
+        },
+        {
+            "title": "Blog & Content",
+            "icon": "fa-newspaper",
+            "gradient": "linear-gradient(135deg,#3b82f6,#2563eb)",
+            "items": [
+                "Full-featured blog with categories and tags",
+                "Rich text editor with embeds and media",
+                "Author profiles and bylines",
+                "RSS and Atom feeds",
+                "Scheduled publishing",
+                "Related posts and content recommendations",
+            ]
+        },
+        {
+            "title": "Forms & Lead Capture",
+            "icon": "fa-list-check",
+            "gradient": "linear-gradient(135deg,#14b8a6,#0d9488)",
+            "items": [
+                "Drag-and-drop form builder",
+                "Conditional logic and multi-step forms",
+                "Submissions stored and exported",
+                "Submissions flow into AlohaCRM as contacts",
+                "Spam protection without CAPTCHAs",
+                "Notifications via AlohaEmail",
+            ]
+        },
+        {
+            "title": "Media Library Powered by AlohaDrive",
+            "icon": "fa-images",
+            "gradient": "linear-gradient(135deg,#60a5fa,#1e40af)",
+            "items": [
+                "Browse your AlohaDrive files directly inside the editor",
+                "Reference mode: edit a file in Drive, watch your site update",
+                "Snapshot mode: lock in a copy at the moment of use",
+                "No export, no re-upload, no duplicated assets",
+                "Image resizing and CDN delivery built in",
+                "Alt text and accessibility prompts",
+            ]
+        },
+        {
+            "title": "Optional Storefront via AlohaCommerce",
+            "icon": "fa-shop",
+            "gradient": "linear-gradient(135deg,#0891b2,#0e7490)",
+            "items": [
+                "Enable AlohaCommerce on any CMS site to add a storefront",
+                "Or enable AlohaCMS on any Commerce store to add a marketing site",
+                "Same domain, same theme, same content management",
+                "Pages and product pages live side by side",
+                "One login, one billing, one team",
+                "Buy CMS or Commerce independently — neither requires the other",
+            ]
+        },
+    ],
+    "integrations": [
+        {"slug": "drive", "name": "AlohaDrive", "note": "Powers the media library — your assets, edited anywhere"},
+        {"slug": "commerce", "name": "AlohaCommerce", "note": "Enable a storefront on any CMS site, or vice versa"},
+        {"slug": "crm", "name": "AlohaCRM", "note": "Form submissions become contacts and leads"},
+        {"slug": "marketing", "name": "AlohaMarketing", "note": "Landing page campaigns and attribution"},
+        {"slug": "email", "name": "AlohaEmail", "note": "Form notifications and newsletter signups"},
+        {"slug": "search", "name": "AlohaSearch", "note": "Search across pages and blog content"},
+    ],
+    "cta": {
+        "primary_label": "Join the Waitlist",
+        "primary_href": "../../AlohaOneApp/index.html?platform=cms&intent=register",
+        "secondary_label": "See AlohaCommerce",
+        "secondary_href": "commerce.html",
     },
 },
 

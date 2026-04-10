@@ -83,6 +83,7 @@ const PLATFORMS = [
     { slug: 'assistant',    name: 'Assistant',    icon: 'fa-phone-volume',    color: '#c084fc', x: 570, y: 105 },
 
     // Top crown — flagship + AI
+    { slug: 'cms',          name: 'CMS',          icon: 'fa-window-maximize', color: '#fb7185', x: 135, y: 115 },
     { slug: 'commerce',     name: 'Commerce',     icon: 'fa-shopping-cart',   color: '#22d3ee', x: 220, y: 80  },
     { slug: 'agent',        name: 'Agent',        icon: 'fa-robot',           color: '#c084fc', x: 320, y: 60  },
     { slug: 'crm',          name: 'CRM',          icon: 'fa-users',           color: '#34d399', x: 425, y: 85  },
