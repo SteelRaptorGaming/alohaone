@@ -92,6 +92,7 @@ const PLATFORMS = [
     { slug: 'document',     name: 'Document',     icon: 'fa-file-alt',        color: '#a78bfa', x: 245, y: 185 },
     { slug: 'marketing',    name: 'Marketing',    icon: 'fa-bullhorn',        color: '#fbbf24', x: 380, y: 175 },
     { slug: 'backup',       name: 'Backup',       icon: 'fa-shield-alt',      color: '#2dd4bf', x: 500, y: 185 },
+    { slug: 'drive',        name: 'Drive',        icon: 'fa-cloud',           color: '#60a5fa', x: 560, y: 240 },
 
     // Mid band
     { slug: 'deliver',      name: 'Deliver',      icon: 'fa-truck-fast',      color: '#fb923c', x: 75,  y: 285 },

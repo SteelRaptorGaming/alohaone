@@ -531,7 +531,7 @@ PLATFORMS = {
     "status": "live",
     "tagline": "Every file. Every device. Always safe.",
     "description": "Continuous encrypted backup across Windows, macOS, Linux, iOS, and Android. Restore anywhere, anytime. Free tier includes 1 device and 5 GB — no credit card required.",
-    "overview": "AlohaBackup runs silently on every device you own. Filesystem watchers catch every change the instant it happens, content-addressed chunking deduplicates automatically across your whole account, and AES-256 encryption keeps everything safe before it leaves your machine. Lose a device, break a laptop, get hit by ransomware — pull any file from any point in history onto any other registered device in seconds.",
+    "overview": "AlohaBackup runs silently on every device you own. Filesystem watchers catch every change the instant it happens, content-addressed chunking deduplicates automatically across your whole account, and AES-256 encryption keeps everything safe before it leaves your machine. Lose a device, break a laptop, get hit by ransomware — pull any file from any point in history onto any other registered device in seconds. Pair it with AlohaDrive when you also need to actively browse, share, or work with files day-to-day — Backup is your safety net for whole devices, Drive is your filing cabinet for active files.",
     "capabilities": [
         {
             "title": "Continuous Backup",
@@ -674,6 +674,195 @@ PLATFORMS = {
         "secondary_href": "http://aloha-dev-web-f4d6fd.s3-website-us-east-1.amazonaws.com/downloads.html",
     },
     "integration_note": "Register for AlohaOne to enable AlohaBackup on your account. Downloads for Windows, macOS, Linux, and Android are hosted on the AlohaBackup download page linked below — sign in once on any device and your whole fleet syncs.",
+},
+
+# ---------------- AlohaDrive ----------------
+"drive": {
+    "name": "AlohaDrive",
+    "icon": "fa-cloud",
+    "gradient": "linear-gradient(135deg,#60a5fa,#1e40af)",
+    "status": "coming",
+    "tagline": "Your files in the cloud, ready when you need them.",
+    "description": "Business cloud storage with drag-and-drop simplicity, virtual-disk Mount on every desktop, team folders for collaboration, and direct integration into AlohaCMS and AlohaCommerce as a shared media library.",
+    "overview": "AlohaDrive is user-driven cloud storage built for business teams. Drag files into the web app, mount your Drive as a virtual disk on Windows, macOS, or Linux, share folders with teammates and external collaborators at four permission levels, and reference your Drive assets directly from AlohaCMS and AlohaCommerce media managers — no export, no re-upload. Pair it with AlohaBackup when you also need scheduled, set-and-forget device protection — Drive is your filing cabinet for active files, Backup is your safety net for whole devices.",
+    "capabilities": [
+        {
+            "title": "Cloud Storage, Your Way",
+            "icon": "fa-cloud-arrow-up",
+            "gradient": "linear-gradient(135deg,#60a5fa,#1e40af)",
+            "items": [
+                "Drag-and-drop upload from any browser",
+                "Folders, rename, move, bulk operations",
+                "Resumable uploads for large files",
+                "File versioning with one-click restore",
+                "Trash with configurable retention",
+                "Generous business storage quotas",
+            ]
+        },
+        {
+            "title": "Access from Anywhere",
+            "icon": "fa-globe",
+            "gradient": "linear-gradient(135deg,#3b82f6,#2563eb)",
+            "items": [
+                "Full web app in any modern browser",
+                "Native iOS and Android apps",
+                "AlohaDrive Mount: your Drive as a virtual disk",
+                "Files stream on demand — no local sync, no disk-space worries",
+                "Pin individual files for offline access",
+                "Works on Windows, macOS, and Linux",
+            ]
+        },
+        {
+            "title": "Team Folders & Sharing",
+            "icon": "fa-people-group",
+            "gradient": "linear-gradient(135deg,#8b5cf6,#7c3aed)",
+            "items": [
+                "Four collaborator roles: Viewer, Uploader, Editor, Manager",
+                "Uploader role for client intake without exposing other files",
+                "Permissions inherit down the tree, override per subfolder",
+                "Per-folder activity feed and upload notifications",
+                "Share by link with password, expiry, view caps, watermarks",
+                "Revoke access at any time",
+            ]
+        },
+        {
+            "title": "Preview Before You Download",
+            "icon": "fa-eye",
+            "gradient": "linear-gradient(135deg,#ec4899,#db2777)",
+            "items": [
+                "100+ file types preview in browser",
+                "PDF, Office, images, audio, video, code, archives",
+                "Server-side rendered Office previews",
+                "Photo viewer with EXIF strip option",
+                "Filename and folder search across your Drive",
+                "Recent, starred, and suggested files",
+            ]
+        },
+        {
+            "title": "Your Assets, Everywhere in AlohaOne",
+            "icon": "fa-link",
+            "gradient": "linear-gradient(135deg,#14b8a6,#0d9488)",
+            "items": [
+                "Browse Drive files from the AlohaCMS media manager",
+                "Browse Drive files from the AlohaCommerce media manager",
+                "Reference mode: live updates flow through to your website",
+                "Snapshot mode: lock in a copy at the moment of use",
+                "Promote any file to AlohaDocument for OCR and retention",
+                "Attach to AlohaCase, AlohaProject, AlohaCRM records",
+            ]
+        },
+        {
+            "title": "Security & Admin",
+            "icon": "fa-lock",
+            "gradient": "linear-gradient(135deg,#06b6d4,#0891b2)",
+            "items": [
+                "AES-256 encryption at rest, TLS 1.2+ in transit",
+                "Use our encryption keys or bring your own (BYOK)",
+                "Per-folder permissions inherit down the tree",
+                "Org policies: forced 2FA, sharing rules, data residency",
+                "Complete audit log of every access and share",
+                "SAML SSO and SCIM provisioning on Enterprise",
+            ]
+        },
+    ],
+    "integrations": [
+        {"slug": "commerce", "name": "AlohaCommerce", "note": "Reference Drive files in your storefront media manager"},
+        {"slug": "document", "name": "AlohaDocument", "note": "Promote a Drive file to a managed document with OCR"},
+        {"slug": "backup", "name": "AlohaBackup", "note": "The complementary safety net for whole-device protection"},
+        {"slug": "case", "name": "AlohaCase", "note": "Attach files to dockets and case records"},
+        {"slug": "project", "name": "AlohaProject", "note": "Attach design files and specs to tasks"},
+        {"slug": "crm", "name": "AlohaCRM", "note": "Attach files to contact and company records"},
+    ],
+    "cta": {
+        "primary_label": "Join the Waitlist",
+        "primary_href": "../../AlohaOneApp/index.html?platform=drive&intent=register",
+        "secondary_label": "Compare with Backup",
+        "secondary_href": "backup.html",
+    },
+    "platform_matrix": {
+        "label": "Mount Anywhere",
+        "heading": "Drive feels native on every device",
+        "sub": "Web access in any browser, native apps on mobile, and AlohaDrive Mount turns your Drive into a virtual disk on every desktop. Files stream on demand — no local sync to manage.",
+        "items": [
+            {"name": "Web",     "detail": "Any modern browser",     "icon": "fas fa-globe",          "soon": True},
+            {"name": "Windows", "detail": "10/11 · Mount + apps",   "icon": "fab fa-windows",        "soon": True},
+            {"name": "macOS",   "detail": "Apple Silicon + Intel",  "icon": "fab fa-apple",          "soon": True},
+            {"name": "Linux",   "detail": "Ubuntu / Fedora",        "icon": "fab fa-linux",          "soon": True},
+            {"name": "iOS",     "detail": "15+",                    "icon": "fab fa-app-store-ios",  "soon": True},
+            {"name": "Android", "detail": "8.0+",                   "icon": "fab fa-android",        "soon": True},
+        ],
+    },
+    "pricing": {
+        "label": "Pricing",
+        "heading": "Business cloud storage that pays for what you actually use",
+        "sub": "Free to start, generous on storage, no surprise bills. Built for business — but the free tier is real, not a 14-day trial in disguise.",
+        "tiers": [
+            {
+                "name": "Starter",
+                "price": "$0",
+                "period": "free forever",
+                "cta_label": "Join the Waitlist",
+                "cta_href": "../../AlohaOneApp/index.html?platform=drive&intent=register&tier=free",
+                "features": [
+                    "Up to 5 users",
+                    "15 GB pooled storage",
+                    "2 GB max file size",
+                    "Web + mobile + Mount (1 device per user)",
+                    "Team folders with role permissions",
+                    "Basic link sharing",
+                    "14-day version history",
+                    "Community support",
+                ],
+            },
+            {
+                "name": "Pro",
+                "price": "$9.95",
+                "period": "per user / month, billed annually",
+                "featured": True,
+                "cta_label": "Join the Waitlist",
+                "cta_href": "../../AlohaOneApp/index.html?platform=drive&intent=register&tier=pro",
+                "features": [
+                    "Unlimited users",
+                    "1 TB per user, pooled across the team",
+                    "50 GB max file size",
+                    "Mount on unlimited devices",
+                    "Full link sharing (passwords, expiry, watermarks)",
+                    "90-day version history and trash",
+                    "AlohaCMS / AlohaCommerce media library integration",
+                    "Webhooks and REST API",
+                    "1-year audit log",
+                    "Email support",
+                ],
+            },
+            {
+                "name": "Enterprise",
+                "price": "$18",
+                "period": "per user / month, billed annually",
+                "cta_label": "Contact Sales",
+                "cta_href": "../index.html#cta",
+                "features": [
+                    "Everything in Pro, plus:",
+                    "5 TB per user pooled (or as much as you need)",
+                    "250 GB max file size",
+                    "Use our encryption keys or bring your own (BYOK)",
+                    "SAML SSO and SCIM provisioning",
+                    "Geographic data residency selection",
+                    "7-year audit log with real-time export",
+                    "IP allowlists, device pinning, link watermarking",
+                    "SOC 2, HIPAA BAA, GDPR DPA",
+                    "Priority support with SLA",
+                ],
+            },
+        ],
+    },
+    "final_cta": {
+        "heading": "Cloud storage built for business — without the Google overhead.",
+        "sub": "Drag your files in. Mount your Drive as a disk. Share folders with your team. Reference your assets straight from your AlohaCMS and AlohaCommerce sites. AlohaDrive is launching soon — join the waitlist and we'll let you know the moment it goes live.",
+        "primary_label": "Join the Waitlist",
+        "primary_href": "../../AlohaOneApp/index.html?platform=drive&intent=register",
+        "secondary_label": "How is this different from AlohaBackup?",
+        "secondary_href": "backup.html",
+    },
 },
 
 # ---------------- AlohaCRM ----------------
