@@ -78,9 +78,9 @@ const BRAIN_VIEWBOX = { w: 620, h: 700 };
 const NEIGHBORS_PER_NODE = 3;  // each neuron connects to its N nearest
 
 const PLATFORMS = [
-    // Outer crown — communication edges
-    { slug: 'message',      name: 'Message',      icon: 'fa-comments',        color: '#22d3ee', x: 55,  y: 110 },
-    { slug: 'assistant',    name: 'Assistant',    icon: 'fa-phone-volume',    color: '#c084fc', x: 570, y: 105 },
+    // Lower-mid wings (relocated from outer crown for visual balance)
+    { slug: 'message',      name: 'Message',      icon: 'fa-comments',        color: '#22d3ee', x: 90,  y: 450 },
+    { slug: 'assistant',    name: 'Assistant',    icon: 'fa-phone-volume',    color: '#c084fc', x: 570, y: 450 },
 
     // Top crown — flagship + AI
     { slug: 'cms',          name: 'CMS',          icon: 'fa-window-maximize', color: '#fb7185', x: 135, y: 115 },
@@ -89,7 +89,7 @@ const PLATFORMS = [
     { slug: 'crm',          name: 'CRM',          icon: 'fa-users',           color: '#34d399', x: 425, y: 85  },
 
     // Upper band
-    { slug: 'inventory',    name: 'Inventory',    icon: 'fa-warehouse',       color: '#06b6d4', x: 130, y: 175 },
+    { slug: 'inventory',    name: 'Inventory',    icon: 'fa-warehouse',       color: '#06b6d4', x: 130, y: 200 },
     { slug: 'document',     name: 'Document',     icon: 'fa-file-alt',        color: '#a78bfa', x: 245, y: 185 },
     { slug: 'marketing',    name: 'Marketing',    icon: 'fa-bullhorn',        color: '#fbbf24', x: 380, y: 175 },
     { slug: 'backup',       name: 'Backup',       icon: 'fa-shield-alt',      color: '#2dd4bf', x: 500, y: 185 },
@@ -100,7 +100,7 @@ const PLATFORMS = [
     { slug: 'case',         name: 'Case',         icon: 'fa-gavel',           color: '#818cf8', x: 200, y: 275 },
     { slug: 'social',       name: 'Social',       icon: 'fa-share-nodes',     color: '#f472b6', x: 320, y: 290 },
     { slug: 'email',        name: 'Email',        icon: 'fa-envelope',        color: '#fb923c', x: 440, y: 275 },
-    { slug: 'affiliate',    name: 'Affiliate',    icon: 'fa-handshake',       color: '#facc15', x: 555, y: 290 },
+    { slug: 'affiliate',    name: 'Affiliate',    icon: 'fa-handshake',       color: '#facc15', x: 555, y: 320 },
 
     // Lower-mid band
     { slug: 'project',      name: 'Project',      icon: 'fa-diagram-project', color: '#818cf8', x: 140, y: 390 },
@@ -111,7 +111,7 @@ const PLATFORMS = [
     // Lower band
     { slug: 'knowledge',    name: 'Knowledge',    icon: 'fa-book-open',       color: '#c084fc', x: 180, y: 500 },
     { slug: 'training',     name: 'Training',     icon: 'fa-graduation-cap',  color: '#4ade80', x: 320, y: 515 },
-    { slug: 'data',         name: 'Data',         icon: 'fa-database',        color: '#38bdf8', x: 460, y: 500 },
+    { slug: 'data',         name: 'Data',         icon: 'fa-database',        color: '#38bdf8', x: 430, y: 500 },
 
     // Bottom — foundation
     { slug: 'search',       name: 'Search',       icon: 'fa-magnifying-glass', color: '#5eead4', x: 310, y: 610 },

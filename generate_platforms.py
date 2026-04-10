@@ -116,13 +116,16 @@ PLATFORMS = {
     ],
     "integrations": [
         {"slug": "inventory", "name": "AlohaInventory", "note": "Warehouses, BOMs, and stock control"},
+        {"slug": "configurator", "name": "AlohaConfigurator", "note": "3D product configuration with live BOMs"},
+        {"slug": "drive", "name": "AlohaDrive", "note": "Browse Drive files in your storefront media manager"},
         {"slug": "deliver", "name": "AlohaDeliver", "note": "Last-mile delivery with photo proof"},
         {"slug": "email", "name": "AlohaEmail", "note": "Order confirmations and transactional mail"},
         {"slug": "marketing", "name": "AlohaMarketing", "note": "Attribution and campaign tracking"},
         {"slug": "social", "name": "AlohaSocial", "note": "Auto-post products across social platforms"},
         {"slug": "affiliate", "name": "AlohaAffiliate", "note": "Commission tracking on orders"},
         {"slug": "crm", "name": "AlohaCRM", "note": "Customers become CRM contacts automatically"},
-        {"slug": "data", "name": "AlohaData", "note": "Order and product analytics warehouse"},
+        {"slug": "support", "name": "AlohaSupport", "note": "Helpdesk that knows your customer's order history"},
+        {"slug": "knowledge", "name": "AlohaKnowledge", "note": "Self-serve articles and FAQ for your storefront"},
         {"slug": "agent", "name": "AlohaAgent", "note": "AI agents for product Q&A and support"},
     ],
     "cta": {
