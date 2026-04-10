@@ -22,3 +22,25 @@ output "route53_nameservers" {
   value       = var.create_route53_zone ? aws_route53_zone.site[0].name_servers : null
   description = "Set these as the nameservers at your domain registrar for the configured domain_name."
 }
+
+# ── app.alohaone.ai outputs ──────────────────────────────────────────────────
+
+output "app_bucket" {
+  value       = aws_s3_bucket.app.bucket
+  description = "S3 bucket holding the AlohaOneApp shell. Sync AlohaOneApp/* here."
+}
+
+output "app_cloudfront_distribution_id" {
+  value       = aws_cloudfront_distribution.app.id
+  description = "CloudFront distribution ID for app.alohaone.ai (use for invalidations after a deploy)."
+}
+
+output "app_cloudfront_domain_name" {
+  value       = aws_cloudfront_distribution.app.domain_name
+  description = "CloudFront-assigned domain for the app distribution. Useful for direct testing before DNS propagates."
+}
+
+output "app_url" {
+  value       = "https://app.${var.domain_name}"
+  description = "Public URL for the AlohaOneApp shell once DNS resolves."
+}
