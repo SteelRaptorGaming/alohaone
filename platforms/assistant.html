@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlohaAssistant — AlohaOne</title>
+    <meta name="description" content="Your voice-enabled AI executive assistant.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/platform-detail.css">
+
+    <style>
+        .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <span class="brand-gradient">AlohaOne</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link" href="../index.html#platforms">Platforms</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#why">Why AlohaOne</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#how">How It Works</a></li>
+            </ul>
+            <a href="../index.html#cta" class="btn btn-sm btn-outline-primary rounded-pill px-3">Get Early Access</a>
+        </div>
+    </div>
+</nav>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero">
+    <div class="container detail-hero-content">
+        <a href="../index.html#platforms" class="back-link">
+            <i class="fas fa-arrow-left"></i> All Platforms
+        </a>
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="detail-hero-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <div>
+                    <span class="platform-badge badge-coming">Coming Soon</span>
+                </div>
+                <h1>AlohaAssistant</h1>
+                <p class="tagline">Your voice-enabled AI executive assistant.</p>
+                <p class="description">A 24/7 virtual exec assistant that answers your phone, books appointments, takes messages, and handles calls with natural voice AI. Never miss a customer again.</p>
+                <div class="d-flex flex-wrap gap-2">
+            <a href="../index.html#cta" class="btn btn-hero btn-primary-custom me-2 mb-2">Request Early Access</a>
+            <a href="../index.html#platforms" class="btn btn-hero btn-outline-light mb-2">See All Platforms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="overview-section">
+    <div class="container">
+        <p>AlohaAssistant is a voice-first AI that acts as your business's virtual executive assistant. It answers phone calls, schedules appointments on your calendar, routes urgent matters to the right person, takes detailed messages, and logs every conversation — all in a natural-sounding voice that represents your brand, 24/7.</p>
+
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Capabilities</p>
+            <h2 class="section-heading">Everything AlohaAssistant Can Do</h2>
+            <p class="section-sub">Deep feature set, but only pay for what you enable. Each capability can be turned on per-org as your needs grow.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h5>Voice Reception</h5>
+                    <ul>
+                        <li>24/7 phone answering with natural voice</li>
+                        <li>Multiple voice personas and accents</li>
+                        <li>Custom greeting and business script</li>
+                        <li>Barge-in and interruption handling</li>
+                        <li>Spam and robocall screening</li>
+                        <li>Warm transfer to human staff</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#0891b2,#0e7490)">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h5>Appointment Booking</h5>
+                    <ul>
+                        <li>Natural language calendar booking</li>
+                        <li>Live availability lookup</li>
+                        <li>Confirmation via SMS and email</li>
+                        <li>Reschedule and cancel by voice</li>
+                        <li>Multi-staff and multi-location support</li>
+                        <li>Buffer times and business hours</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706)">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <h5>Messages & Transcripts</h5>
+                    <ul>
+                        <li>Detailed message capture</li>
+                        <li>Full conversation transcription</li>
+                        <li>Caller intent summary</li>
+                        <li>Urgency detection and priority flagging</li>
+                        <li>Voicemail → email with transcript</li>
+                        <li>Searchable call history</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h5>Smart Routing</h5>
+                    <ul>
+                        <li>Department and staff routing rules</li>
+                        <li>After-hours escalation</li>
+                        <li>VIP caller recognition</li>
+                        <li>Language detection and routing</li>
+                        <li>Queue management and callbacks</li>
+                        <li>On-call schedule integration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#ec4899,#db2777)">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h5>Customer Context</h5>
+                    <ul>
+                        <li>Caller ID lookup in AlohaCRM</li>
+                        <li>Personalized greetings for known contacts</li>
+                        <li>Order history awareness</li>
+                        <li>Open ticket context from AlohaSupport</li>
+                        <li>Previous call summary for returning callers</li>
+                        <li>Auto-log to contact record</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#3b82f6,#2563eb)">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h5>Call Intelligence</h5>
+                    <ul>
+                        <li>Call volume and pattern analytics</li>
+                        <li>Common question categorization</li>
+                        <li>After-hours vs business-hours breakdown</li>
+                        <li>Caller sentiment tracking</li>
+                        <li>Missed opportunity reports</li>
+                        <li>AI-generated daily call summaries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- INTEGRATIONS -->
+<section class="integrations-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Connects With</p>
+            <h2 class="section-heading">Better Together</h2>
+            <p class="section-sub">AlohaAssistant is powerful alone — but it's designed to share data and context with every other AlohaOne platform.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="message.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#06b6d4,#0891b2)">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaMessage</strong>
+                        <span>Every call logged in the unified inbox</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="crm.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaCRM</strong>
+                        <span>Caller ID lookup and contact auto-update</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="support.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#38bdf8,#0284c7)">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaSupport</strong>
+                        <span>Convert calls to tickets</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="commerce.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#3b82f6,#2563eb)">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaCommerce</strong>
+                        <span>Order status over the phone</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="agent.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAgent</strong>
+                        <span>Powered by AlohaAgent's voice AI stack</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ecosystem-callout mt-5">
+            <h4>One Platform, Pay For What You Use</h4>
+            <p>AlohaOne is a single platform with capabilities you enable and pay for as you need them. Start with AlohaAssistant, add more when you're ready.</p>
+            <a href="../index.html#cta" class="btn">Request Early Access</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 mb-3">
+                <h4 class="text-white mb-3" style="font-weight:800">
+                    <span style="background:var(--ao-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlohaOne</span>
+                </h4>
+                <p class="mb-0" style="max-width:280px">
+                    One platform, every tool your business needs.
+                </p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>Platforms</h6>
+                <a href="commerce.html">Commerce</a>
+                <a href="document.html">Document</a>
+                <a href="case.html">Case</a>
+                <a href="project.html">Project</a>
+                <a href="crm.html">CRM</a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>More</h6>
+                <a href="marketing.html">Marketing</a>
+                <a href="email.html">Email</a>
+                <a href="support.html">Support</a>
+                <a href="knowledge.html">Knowledge</a>
+                <a href="agent.html">Agent</a>
+            </div>
+            <div class="col-lg-4">
+                <h6>Get Started</h6>
+                <a href="../index.html#cta">Request Early Access</a>
+                <a href="../index.html#platforms">Browse All Platforms</a>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+            <p class="text-muted">&copy; <span id="footer-year"></span> AlohaOne. All rights reserved.</p>
+            <a href="../index.html" class="text-muted">&larr; Back to home</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

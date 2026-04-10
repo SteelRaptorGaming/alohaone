@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlohaMessage — AlohaOne</title>
+    <meta name="description" content="Every customer conversation, one inbox.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/platform-detail.css">
+
+    <style>
+        .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <span class="brand-gradient">AlohaOne</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link" href="../index.html#platforms">Platforms</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#why">Why AlohaOne</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#how">How It Works</a></li>
+            </ul>
+            <a href="../index.html#cta" class="btn btn-sm btn-outline-primary rounded-pill px-3">Get Early Access</a>
+        </div>
+    </div>
+</nav>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero">
+    <div class="container detail-hero-content">
+        <a href="../index.html#platforms" class="back-link">
+            <i class="fas fa-arrow-left"></i> All Platforms
+        </a>
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="detail-hero-icon" style="background: linear-gradient(135deg,#06b6d4,#0891b2)">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div>
+                    <span class="platform-badge badge-coming">Coming Soon</span>
+                </div>
+                <h1>AlohaMessage</h1>
+                <p class="tagline">Every customer conversation, one inbox.</p>
+                <p class="description">The unified message center for your business — email, phone, SMS, Facebook, Instagram, Etsy, WhatsApp, live chat, and more. Reply from one screen no matter which channel the customer used.</p>
+                <div class="d-flex flex-wrap gap-2">
+            <a href="../index.html#cta" class="btn btn-hero btn-primary-custom me-2 mb-2">Request Early Access</a>
+            <a href="../index.html#platforms" class="btn btn-hero btn-outline-light mb-2">See All Platforms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="overview-section">
+    <div class="container">
+        <p>AlohaMessage is the conversation layer for the whole AlohaOne ecosystem. Every message from every channel lands in one unified inbox — email, phone transcripts from AlohaAssistant, Facebook and Instagram DMs, Etsy messages, SMS, WhatsApp Business, live chat. Your team replies from one screen; customers get seamless conversations regardless of how they reach out.</p>
+
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Capabilities</p>
+            <h2 class="section-heading">Everything AlohaMessage Can Do</h2>
+            <p class="section-sub">Deep feature set, but only pay for what you enable. Each capability can be turned on per-org as your needs grow.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#06b6d4,#0891b2)">
+                        <i class="fas fa-tower-broadcast"></i>
+                    </div>
+                    <h5>Every Channel</h5>
+                    <ul>
+                        <li>Email (IMAP, SES, Gmail, Outlook)</li>
+                        <li>Phone and voicemail via AlohaAssistant</li>
+                        <li>SMS and MMS (Twilio and friends)</li>
+                        <li>Facebook Messenger and Instagram DMs</li>
+                        <li>Etsy messages and Etsy order conversations</li>
+                        <li>WhatsApp Business</li>
+                        <li>Live chat from AlohaCommerce storefronts</li>
+                        <li>Web forms and contact pages</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                        <i class="fas fa-inbox"></i>
+                    </div>
+                    <h5>Unified Inbox</h5>
+                    <ul>
+                        <li>All channels in one threaded view</li>
+                        <li>Conversations grouped by customer, not channel</li>
+                        <li>Unread, assigned, and priority filters</li>
+                        <li>Shared team inbox with assignments</li>
+                        <li>Internal notes and @mentions</li>
+                        <li>Full-text search across every message</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#ec4899,#db2777)">
+                        <i class="fas fa-reply-all"></i>
+                    </div>
+                    <h5>Reply From One Place</h5>
+                    <ul>
+                        <li>Reply in the original channel seamlessly</li>
+                        <li>Switch channels mid-conversation</li>
+                        <li>Canned responses and templates</li>
+                        <li>Rich media and file attachments</li>
+                        <li>Typing indicators and read receipts</li>
+                        <li>Keyboard shortcuts for fast handling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h5>Team Collaboration</h5>
+                    <ul>
+                        <li>Assignment rules and round-robin</li>
+                        <li>Agent collision detection</li>
+                        <li>Status indicators (online, busy, away)</li>
+                        <li>Handoff with full context preservation</li>
+                        <li>Tag, categorize, and filter conversations</li>
+                        <li>SLA timers with escalation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h5>AI & Automation</h5>
+                    <ul>
+                        <li>AI-suggested replies in your brand voice</li>
+                        <li>Auto-categorization and tagging</li>
+                        <li>Sentiment analysis on every message</li>
+                        <li>Language detection and auto-translation</li>
+                        <li>Auto-responses for FAQs</li>
+                        <li>Escalation triggers based on intent</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706)">
+                        <i class="fas fa-address-card"></i>
+                    </div>
+                    <h5>Customer Context</h5>
+                    <ul>
+                        <li>Full CRM profile beside every conversation</li>
+                        <li>Order history from AlohaCommerce</li>
+                        <li>Open tickets from AlohaSupport</li>
+                        <li>Past conversations across all channels</li>
+                        <li>Customer lifetime value at a glance</li>
+                        <li>Attach documents from AlohaDocument</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- INTEGRATIONS -->
+<section class="integrations-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Connects With</p>
+            <h2 class="section-heading">Better Together</h2>
+            <p class="section-sub">AlohaMessage is powerful alone — but it's designed to share data and context with every other AlohaOne platform.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="assistant.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAssistant</strong>
+                        <span>Phone calls flow into the inbox as transcripts</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="support.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#38bdf8,#0284c7)">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaSupport</strong>
+                        <span>Escalate conversations to formal tickets</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="crm.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaCRM</strong>
+                        <span>Every message attached to a contact record</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="email.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#fb923c,#f97316)">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaEmail</strong>
+                        <span>Outbound email via deliverability pipeline</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="social.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#ec4899,#be185d)">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaSocial</strong>
+                        <span>Social DMs and comments captured as messages</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="agent.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAgent</strong>
+                        <span>AI drafts and auto-responses</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ecosystem-callout mt-5">
+            <h4>One Platform, Pay For What You Use</h4>
+            <p>AlohaOne is a single platform with capabilities you enable and pay for as you need them. Start with AlohaMessage, add more when you're ready.</p>
+            <a href="../index.html#cta" class="btn">Request Early Access</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 mb-3">
+                <h4 class="text-white mb-3" style="font-weight:800">
+                    <span style="background:var(--ao-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlohaOne</span>
+                </h4>
+                <p class="mb-0" style="max-width:280px">
+                    One platform, every tool your business needs.
+                </p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>Platforms</h6>
+                <a href="commerce.html">Commerce</a>
+                <a href="document.html">Document</a>
+                <a href="case.html">Case</a>
+                <a href="project.html">Project</a>
+                <a href="crm.html">CRM</a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>More</h6>
+                <a href="marketing.html">Marketing</a>
+                <a href="email.html">Email</a>
+                <a href="support.html">Support</a>
+                <a href="knowledge.html">Knowledge</a>
+                <a href="agent.html">Agent</a>
+            </div>
+            <div class="col-lg-4">
+                <h6>Get Started</h6>
+                <a href="../index.html#cta">Request Early Access</a>
+                <a href="../index.html#platforms">Browse All Platforms</a>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+            <p class="text-muted">&copy; <span id="footer-year"></span> AlohaOne. All rights reserved.</p>
+            <a href="../index.html" class="text-muted">&larr; Back to home</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

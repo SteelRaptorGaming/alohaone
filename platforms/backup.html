@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlohaBackup — AlohaOne</title>
+    <meta name="description" content="Every file. Every device. Always safe.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/platform-detail.css">
+
+    <style>
+        .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <span class="brand-gradient">AlohaOne</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link" href="../index.html#platforms">Platforms</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#why">Why AlohaOne</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#how">How It Works</a></li>
+            </ul>
+            <a href="../index.html#cta" class="btn btn-sm btn-outline-primary rounded-pill px-3">Get Early Access</a>
+        </div>
+    </div>
+</nav>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero">
+    <div class="container detail-hero-content">
+        <a href="../index.html#platforms" class="back-link">
+            <i class="fas fa-arrow-left"></i> All Platforms
+        </a>
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="detail-hero-icon" style="background: linear-gradient(135deg,#14b8a6,#0d9488)">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                    <span class="platform-badge badge-live">Live</span>
+                </div>
+                <h1>AlohaBackup</h1>
+                <p class="tagline">Every file. Every device. Always safe.</p>
+                <p class="description">Continuous encrypted backup across Windows, macOS, Linux, iOS, and Android. Restore anywhere, anytime. Free tier includes 1 device and 5 GB — no credit card required.</p>
+                <div class="d-flex flex-wrap gap-2">
+            <a href="../../AlohaOneApp/index.html?platform=backup&intent=register" class="btn btn-hero btn-primary-custom me-2 mb-2">Start Free</a>
+            <a href="../../AlohaOneApp/index.html?platform=backup" class="btn btn-hero btn-outline-light mb-2">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="overview-section">
+    <div class="container">
+        <p>AlohaBackup runs silently on every device you own. Filesystem watchers catch every change the instant it happens, content-addressed chunking deduplicates automatically across your whole account, and AES-256 encryption keeps everything safe before it leaves your machine. Lose a device, break a laptop, get hit by ransomware — pull any file from any point in history onto any other registered device in seconds.</p>
+
+        <div class="alert alert-info mt-4" style="max-width:780px;margin:2rem auto 0;background:#eef2ff;border:1px solid #c7d2fe;color:#3730a3;border-radius:var(--ao-radius);padding:1.25rem 1.5rem;">
+            <i class="fas fa-info-circle me-2"></i> Register for AlohaOne to enable AlohaBackup on your account. Downloads for Windows, macOS, Linux, and Android are hosted on the AlohaBackup download page linked below — sign in once on any device and your whole fleet syncs.
+        </div>
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Capabilities</p>
+            <h2 class="section-heading">Everything AlohaBackup Can Do</h2>
+            <p class="section-sub">Deep feature set, but only pay for what you enable. Each capability can be turned on per-org as your needs grow.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#14b8a6,#0d9488)">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h5>Continuous Backup</h5>
+                    <ul>
+                        <li>Filesystem watchers — no scheduled jobs</li>
+                        <li>Content-addressed chunking (SHA-256 dedup)</li>
+                        <li>Smart 4-8 MB chunks to minimize bandwidth</li>
+                        <li>Include and exclude glob patterns</li>
+                        <li>Cross-platform: Windows, macOS, Linux, iOS, Android</li>
+                        <li>Daemon and CLI modes for servers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#3b82f6,#2563eb)">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h5>Security & Encryption</h5>
+                    <ul>
+                        <li>AES-256 at rest via AWS KMS per-tenant</li>
+                        <li>TLS encryption in transit</li>
+                        <li>Hardware-ID device binding</li>
+                        <li>Per-device UUID in OS secure storage</li>
+                        <li>Device revocation from any browser</li>
+                        <li>Presigned URLs for direct S3 upload</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h5>Restore Anywhere</h5>
+                    <ul>
+                        <li>Restore files to any registered device</li>
+                        <li>File-level or folder-level restore</li>
+                        <li>Version history (7-365 days by tier)</li>
+                        <li>Priority restore on Pro and Enterprise</li>
+                        <li>Browse all backed-up files online</li>
+                        <li>Download single files or ZIP exports</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706)">
+                        <i class="fas fa-user-tag"></i>
+                    </div>
+                    <h5>Tiers & Account</h5>
+                    <ul>
+                        <li>Free tier — get started in 60 seconds</li>
+                        <li>Family, Pro, and Enterprise tiers</li>
+                        <li>Progressive device and storage limits</li>
+                        <li>Promotional discount codes</li>
+                        <li>Per-device storage quotas</li>
+                        <li>SSO and SLAs on Enterprise</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="platform-matrix-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Every Device</p>
+            <h2 class="section-heading">Works everywhere you do</h2>
+            <p class="section-sub">One account, all your devices. Sign in once and new installs register automatically.</p>
+        </div>
+        <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4 col-lg">
+                <a href="http://aloha-dev-web-f4d6fd.s3-website-us-east-1.amazonaws.com/downloads.html" class="platform-support-card">
+                    <i class="fab fa-windows"></i>
+                    <strong>Windows</strong>
+                    <span>10/11 · 79 MB</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+                <a href="http://aloha-dev-web-f4d6fd.s3-website-us-east-1.amazonaws.com/downloads.html" class="platform-support-card">
+                    <i class="fab fa-apple"></i>
+                    <strong>macOS</strong>
+                    <span>Apple Silicon + Intel</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+                <a href="http://aloha-dev-web-f4d6fd.s3-website-us-east-1.amazonaws.com/downloads.html" class="platform-support-card">
+                    <i class="fab fa-linux"></i>
+                    <strong>Linux</strong>
+                    <span>Ubuntu / Fedora · 40 MB</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+                <a href="http://aloha-dev-web-f4d6fd.s3-website-us-east-1.amazonaws.com/downloads.html" class="platform-support-card">
+                    <i class="fab fa-android"></i>
+                    <strong>Android</strong>
+                    <span>7.0+ · 35 MB</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+                <a href="#" class="platform-support-card soon">
+                    <i class="fab fa-app-store-ios"></i>
+                    <strong>iOS</strong>
+                    <span>15+</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="pricing-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Pricing</p>
+            <h2 class="section-heading">Simple pricing. Fair limits.</h2>
+            <p class="section-sub">Start free and upgrade only when you outgrow it. No credit card to sign up.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card">
+                    <h5>Free</h5>
+                    <div class="price">$0</div>
+                    <p class="period">forever</p>
+                    <ul>
+                        <li>1 device</li>
+                        <li>5 GB total storage</li>
+                        <li>7-day version history</li>
+                        <li>Email support</li>
+                        <li>No credit card required</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=backup&intent=register&tier=free" class="btn">Start Free</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card featured">
+                    <h5>Family</h5>
+                    <div class="price">$9.99</div>
+                    <p class="period">per month</p>
+                    <ul>
+                        <li>5 devices</li>
+                        <li>500 GB total storage</li>
+                        <li>100 GB per device</li>
+                        <li>30-day version history</li>
+                        <li>Priority email support</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=backup&intent=register&tier=family" class="btn">Start Family Plan</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card">
+                    <h5>Pro</h5>
+                    <div class="price">$19.99</div>
+                    <p class="period">per month</p>
+                    <ul>
+                        <li>10 devices</li>
+                        <li>2 TB total storage</li>
+                        <li>500 GB per device</li>
+                        <li>90-day version history</li>
+                        <li>Priority restore</li>
+                        <li>Chat support</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=backup&intent=register&tier=pro" class="btn">Start Pro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="integrations-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Connects With</p>
+            <h2 class="section-heading">Better Together</h2>
+            <p class="section-sub">AlohaBackup is powerful alone — but it's designed to share data and context with every other AlohaOne platform.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="document.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaDocument</strong>
+                        <span>Backup your document repository</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="search.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#0d9488,#115e59)">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaSearch</strong>
+                        <span>Find backed-up files across every device</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="agent.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAgent</strong>
+                        <span>Agents can search backed-up files</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ecosystem-callout mt-5">
+            <h4>One Platform, Pay For What You Use</h4>
+            <p>AlohaOne is a single platform with capabilities you enable and pay for as you need them. Start with AlohaBackup, add more when you're ready.</p>
+            <a href="../index.html#cta" class="btn">Request Early Access</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="final-cta-section">
+    <div class="container final-cta-content">
+        <h2>Never lose a file again.</h2>
+        <p>Install AlohaBackup on every device, sign in once, and let it run. The free tier is enough for most single-device users — you only pay when you actually need more.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="../../AlohaOneApp/index.html?platform=backup&intent=register" class="btn btn-hero btn-primary-custom">Start Free</a>
+            <a href="http://aloha-dev-web-f4d6fd.s3-website-us-east-1.amazonaws.com/downloads.html" class="btn btn-hero btn-outline-light">Download the App</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 mb-3">
+                <h4 class="text-white mb-3" style="font-weight:800">
+                    <span style="background:var(--ao-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlohaOne</span>
+                </h4>
+                <p class="mb-0" style="max-width:280px">
+                    One platform, every tool your business needs.
+                </p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>Platforms</h6>
+                <a href="commerce.html">Commerce</a>
+                <a href="document.html">Document</a>
+                <a href="case.html">Case</a>
+                <a href="project.html">Project</a>
+                <a href="crm.html">CRM</a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>More</h6>
+                <a href="marketing.html">Marketing</a>
+                <a href="email.html">Email</a>
+                <a href="support.html">Support</a>
+                <a href="knowledge.html">Knowledge</a>
+                <a href="agent.html">Agent</a>
+            </div>
+            <div class="col-lg-4">
+                <h6>Get Started</h6>
+                <a href="../index.html#cta">Request Early Access</a>
+                <a href="../index.html#platforms">Browse All Platforms</a>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+            <p class="text-muted">&copy; <span id="footer-year"></span> AlohaOne. All rights reserved.</p>
+            <a href="../index.html" class="text-muted">&larr; Back to home</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

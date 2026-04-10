@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlohaCommerce — AlohaOne</title>
+    <meta name="description" content="Enterprise e-commerce without the enterprise price tag.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/platform-detail.css">
+
+    <style>
+        .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <span class="brand-gradient">AlohaOne</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link" href="../index.html#platforms">Platforms</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#why">Why AlohaOne</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#how">How It Works</a></li>
+            </ul>
+            <a href="../index.html#cta" class="btn btn-sm btn-outline-primary rounded-pill px-3">Get Early Access</a>
+        </div>
+    </div>
+</nav>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero">
+    <div class="container detail-hero-content">
+        <a href="../index.html#platforms" class="back-link">
+            <i class="fas fa-arrow-left"></i> All Platforms
+        </a>
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="detail-hero-icon" style="background: linear-gradient(135deg,#3b82f6,#2563eb)">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div>
+                    <span class="platform-badge badge-live">Live</span>
+                </div>
+                <h1>AlohaCommerce</h1>
+                <p class="tagline">Enterprise e-commerce without the enterprise price tag.</p>
+                <p class="description">A multi-tenant commerce platform with products, orders, payments, shipping, flexible theming, and an AI-powered content studio — built on serverless AWS from day one.</p>
+                <div class="d-flex flex-wrap gap-2">
+            <a href="../../AlohaOneApp/index.html?platform=commerce&intent=register" class="btn btn-hero btn-primary-custom me-2 mb-2">Start Free Trial</a>
+            <a href="https://ultimatecraftdesk.com" class="btn btn-hero btn-outline-light mb-2">See a Live Store</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="overview-section">
+    <div class="container">
+        <p>AlohaCommerce is the storefront and order-management backbone of the AlohaOne ecosystem. It handles the entire retail lifecycle — product catalog, checkout, payments, orders — with a template-first storefront engine that lets you ship a beautiful store in minutes, not months. AlohaInventory, AlohaCRM, AlohaAffiliate, and AlohaConfigurator are already bundled and toggle-able per tenant. Pair it with AlohaDeliver for last-mile fulfillment.</p>
+
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Capabilities</p>
+            <h2 class="section-heading">Everything AlohaCommerce Can Do</h2>
+            <p class="section-sub">Deep feature set, but only pay for what you enable. Each capability can be turned on per-org as your needs grow.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#0891b2,#0e7490)">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h5>Products & Catalog</h5>
+                    <ul>
+                        <li>Simple, configurable, bundle, and digital products</li>
+                        <li>Variants with dependent options and dynamic pricing</li>
+                        <li>Product categories and collections</li>
+                        <li>SEO per product and category</li>
+                        <li>Reviews, ratings, and verified purchase badges</li>
+                        <li>Bulk import with auto-mapping</li>
+                        <li>Deep stock sync with AlohaInventory (optional)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h5>Checkout & Orders</h5>
+                    <ul>
+                        <li>Session-based carts with guest checkout</li>
+                        <li>Stripe payments + Stripe Connect per-store</li>
+                        <li>Discount codes, BOGO, and scheduled promos</li>
+                        <li>Tax engine with per-region rules</li>
+                        <li>Full order lifecycle with status history</li>
+                        <li>Refunds, cancellations, and partial captures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#ec4899,#db2777)">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h5>Storefront & Theming</h5>
+                    <ul>
+                        <li>Template gallery (Artisan, Coastal, Modern, Boutique, and more)</li>
+                        <li>Liquid templating with live preview</li>
+                        <li>Section-based page builder — no coding</li>
+                        <li>CSS variable theming and brand controls</li>
+                        <li>Content pages, blog, and gift finder</li>
+                        <li>Custom domains with managed SSL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#14b8a6,#0d9488)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h5>Shipping & Fulfillment</h5>
+                    <ul>
+                        <li>Configurable methods and zones</li>
+                        <li>White-glove, freight, and local delivery</li>
+                        <li>Carrier integration and tracking numbers</li>
+                        <li>Shipment status timeline</li>
+                        <li>Regional delivery scheduling</li>
+                        <li>Self-pickup and in-store options</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706)">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h5>AI Content Studio</h5>
+                    <ul>
+                        <li>AI product description generation</li>
+                        <li>Conversational image generation (MidJourney-style)</li>
+                        <li>Background removal and upscaling</li>
+                        <li>Theme palette generation</li>
+                        <li>Credit-based wallet for AI usage</li>
+                        <li>AI-powered gift recommendations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#06b6d4,#0891b2)">
+                        <i class="fas fa-gauge-high"></i>
+                    </div>
+                    <h5>Platform & Admin</h5>
+                    <ul>
+                        <li>Real-time sales and conversion dashboards</li>
+                        <li>Role-based team permissions</li>
+                        <li>Webhook system with signed payloads</li>
+                        <li>Multi-tenant with PostgreSQL RLS</li>
+                        <li>Ecwid, Etsy, and custom integrations</li>
+                        <li>Full audit logging and activity feeds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="customers-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Real Stores, Live Today</p>
+            <h2 class="section-heading">Built for complex products, proven on real ones</h2>
+            <p class="section-sub">From cubbie-by-cubbie custom desks to made-to-order gift crates, AlohaCommerce runs storefronts that off-the-shelf platforms can't handle.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong><a href="https://ultimatecraftdesk.com" target="_blank" rel="noopener">UltimateCraftDesk.com</a></strong>
+                    <p>Flagship custom-desk store with 3D configurator, component-level inventory, and full production workflow integration.</p>
+                    <div class="customer-tags"><span class="customer-tag">3D Configurator</span><span class="customer-tag">Configurable</span><span class="customer-tag">BOM</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong><a href="https://noodleboards.com" target="_blank" rel="noopener">NoodleBoards.com</a></strong>
+                    <p>Custom stovetop covers and serving trays with size, wood, and finish options.</p>
+                    <div class="customer-tags"><span class="customer-tag">Made-to-Order</span><span class="customer-tag">Variants</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong><a href="https://ultimatedogbeds.com" target="_blank" rel="noopener">UltimateDogBeds.com</a></strong>
+                    <p>Customizable dog beds with size, fabric, and fill options.</p>
+                    <div class="customer-tags"><span class="customer-tag">Configurable</span><span class="customer-tag">Pet</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong><a href="https://secretarms.com" target="_blank" rel="noopener">SecretArms.com</a></strong>
+                    <p>Furniture and wall pieces with built-in firearm storage compartments.</p>
+                    <div class="customer-tags"><span class="customer-tag">Furniture</span><span class="customer-tag">Niche</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong><a href="https://bodyjunk.com" target="_blank" rel="noopener">Bodyjunk.com</a></strong>
+                    <p>Body lotions, lip balms, and soaps with scent variants and bundles.</p>
+                    <div class="customer-tags"><span class="customer-tag">Variants</span><span class="customer-tag">Bundles</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong><a href="https://oceanstyled.com" target="_blank" rel="noopener">OceanStyled.com</a></strong>
+                    <p>Ocean and beach apparel with standard size and color variants.</p>
+                    <div class="customer-tags"><span class="customer-tag">Apparel</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong>GiftedCrate</strong>
+                    <p>Customizable gift baskets with a visual crate builder.</p>
+                    <div class="customer-tags"><span class="customer-tag">Configurator</span><span class="customer-tag">Gifting</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="customer-card">
+                    <strong><a href="https://ultimateweddingrentals.com" target="_blank" rel="noopener">UltimateWeddingRentals.com</a></strong>
+                    <p>Wedding rentals with inventory-based reservation model.</p>
+                    <div class="customer-tags"><span class="customer-tag">Rental</span><span class="customer-tag">Inventory</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pricing-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Pricing</p>
+            <h2 class="section-heading">First store free. Grow from there.</h2>
+            <p class="section-sub">No credit card required to start. You only pay for additional stores as you launch them.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card">
+                    <h5>Starter</h5>
+                    <div class="price">$0</div>
+                    <p class="period">first store free</p>
+                    <ul>
+                        <li>1 storefront</li>
+                        <li>Unlimited products</li>
+                        <li>Unlimited orders</li>
+                        <li>Bundled CRM, Affiliate, Inventory, Configurator</li>
+                        <li>$20 AI Image Studio credit</li>
+                        <li>Template gallery + page builder</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=commerce&intent=register" class="btn">Start Free</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card featured">
+                    <h5>Multi-Store</h5>
+                    <div class="price">$9.99</div>
+                    <p class="period">per additional store · monthly</p>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>Add stores on demand</li>
+                        <li>Stripe Connect payouts</li>
+                        <li>Custom domains with managed SSL</li>
+                        <li>Priority email support</li>
+                        <li>Billed per active store</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=commerce&intent=register" class="btn">Start Free, Pay Later</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card">
+                    <h5>Enterprise</h5>
+                    <div class="price">Custom</div>
+                    <p class="period">white-glove onboarding</p>
+                    <ul>
+                        <li>Everything in Multi-Store</li>
+                        <li>Dedicated onboarding</li>
+                        <li>SLA and support agreement</li>
+                        <li>Custom integrations</li>
+                        <li>Production workflow integration (AlohaFlow)</li>
+                        <li>Delivery integration (AlohaDeliver)</li>
+                    </ul>
+                    <a href="../index.html#cta" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="integrations-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Connects With</p>
+            <h2 class="section-heading">Better Together</h2>
+            <p class="section-sub">AlohaCommerce is powerful alone — but it's designed to share data and context with every other AlohaOne platform.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="inventory.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#0891b2,#0e7490)">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaInventory</strong>
+                        <span>Warehouses, BOMs, and stock control</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="deliver.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#f97316,#c2410c)">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaDeliver</strong>
+                        <span>Last-mile delivery with photo proof</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="email.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#fb923c,#f97316)">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaEmail</strong>
+                        <span>Order confirmations and transactional mail</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="marketing.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#f97316,#ea580c)">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaMarketing</strong>
+                        <span>Attribution and campaign tracking</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="social.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#ec4899,#be185d)">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaSocial</strong>
+                        <span>Auto-post products across social platforms</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="affiliate.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706)">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAffiliate</strong>
+                        <span>Commission tracking on orders</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="crm.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaCRM</strong>
+                        <span>Customers become CRM contacts automatically</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="data.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#0ea5e9,#0369a1)">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaData</strong>
+                        <span>Order and product analytics warehouse</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="agent.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAgent</strong>
+                        <span>AI agents for product Q&A and support</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ecosystem-callout mt-5">
+            <h4>One Platform, Pay For What You Use</h4>
+            <p>AlohaOne is a single platform with capabilities you enable and pay for as you need them. Start with AlohaCommerce, add more when you're ready.</p>
+            <a href="../index.html#cta" class="btn">Request Early Access</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="final-cta-section">
+    <div class="container final-cta-content">
+        <h2>Launch your store in minutes.</h2>
+        <p>Sign up, pick a template, and your storefront is live. No credit card required — your first store is free, and you can configure custom products, run affiliate programs, and manage component inventory from day one.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="../../AlohaOneApp/index.html?platform=commerce&intent=register" class="btn btn-hero btn-primary-custom">Start Free Trial</a>
+            <a href="https://ultimatecraftdesk.com" class="btn btn-hero btn-outline-light">See a Live Store</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 mb-3">
+                <h4 class="text-white mb-3" style="font-weight:800">
+                    <span style="background:var(--ao-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlohaOne</span>
+                </h4>
+                <p class="mb-0" style="max-width:280px">
+                    One platform, every tool your business needs.
+                </p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>Platforms</h6>
+                <a href="commerce.html">Commerce</a>
+                <a href="document.html">Document</a>
+                <a href="case.html">Case</a>
+                <a href="project.html">Project</a>
+                <a href="crm.html">CRM</a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>More</h6>
+                <a href="marketing.html">Marketing</a>
+                <a href="email.html">Email</a>
+                <a href="support.html">Support</a>
+                <a href="knowledge.html">Knowledge</a>
+                <a href="agent.html">Agent</a>
+            </div>
+            <div class="col-lg-4">
+                <h6>Get Started</h6>
+                <a href="../index.html#cta">Request Early Access</a>
+                <a href="../index.html#platforms">Browse All Platforms</a>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+            <p class="text-muted">&copy; <span id="footer-year"></span> AlohaOne. All rights reserved.</p>
+            <a href="../index.html" class="text-muted">&larr; Back to home</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

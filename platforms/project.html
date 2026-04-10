@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlohaProject — AlohaOne</title>
+    <meta name="description" content="Project management that developers actually use.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/platform-detail.css">
+
+    <style>
+        .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <span class="brand-gradient">AlohaOne</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link" href="../index.html#platforms">Platforms</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#why">Why AlohaOne</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#how">How It Works</a></li>
+            </ul>
+            <a href="../index.html#cta" class="btn btn-sm btn-outline-primary rounded-pill px-3">Get Early Access</a>
+        </div>
+    </div>
+</nav>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero">
+    <div class="container detail-hero-content">
+        <a href="../index.html#platforms" class="back-link">
+            <i class="fas fa-arrow-left"></i> All Platforms
+        </a>
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="detail-hero-icon" style="background: linear-gradient(135deg,#6366f1,#4f46e5)">
+                    <i class="fas fa-diagram-project"></i>
+                </div>
+                <div>
+                    <span class="platform-badge badge-coming">Coming Soon</span>
+                </div>
+                <h1>AlohaProject</h1>
+                <p class="tagline">Project management that developers actually use.</p>
+                <p class="description">Issues, boards, sprints, roadmaps, and time tracking — the JIRA-class project tool built for teams that already live in AlohaOne.</p>
+                <div class="d-flex flex-wrap gap-2">
+            <a href="../index.html#cta" class="btn btn-hero btn-primary-custom me-2 mb-2">Request Early Access</a>
+            <a href="../index.html#platforms" class="btn btn-hero btn-outline-light mb-2">See All Platforms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="overview-section">
+    <div class="container">
+        <p>AlohaProject is a full project management system for engineering, operations, and cross-functional teams. Boards, sprints, backlogs, and roadmaps — with deep integration into Documents, Knowledge, and Support for context you can't get anywhere else.</p>
+
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Capabilities</p>
+            <h2 class="section-heading">Everything AlohaProject Can Do</h2>
+            <p class="section-sub">Deep feature set, but only pay for what you enable. Each capability can be turned on per-org as your needs grow.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#6366f1,#4f46e5)">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h5>Issues & Tasks</h5>
+                    <ul>
+                        <li>Custom issue types and workflows</li>
+                        <li>Rich text descriptions with embeds</li>
+                        <li>Subtasks, dependencies, and epics</li>
+                        <li>Custom fields and labels</li>
+                        <li>Bulk edit and multi-select</li>
+                        <li>Keyboard-first navigation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#3b82f6,#2563eb)">
+                        <i class="fas fa-columns"></i>
+                    </div>
+                    <h5>Boards & Sprints</h5>
+                    <ul>
+                        <li>Kanban and scrum boards</li>
+                        <li>Sprint planning and velocity tracking</li>
+                        <li>Burndown and burnup charts</li>
+                        <li>Backlog grooming views</li>
+                        <li>Swimlanes and WIP limits</li>
+                        <li>Multi-project boards</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h5>Roadmaps & Planning</h5>
+                    <ul>
+                        <li>Timeline and Gantt views</li>
+                        <li>Dependencies across teams</li>
+                        <li>Milestone tracking</li>
+                        <li>Portfolio-level roadmaps</li>
+                        <li>Capacity planning</li>
+                        <li>Release planning</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h5>Tracking & Automation</h5>
+                    <ul>
+                        <li>Time tracking and worklogs</li>
+                        <li>Custom workflow rules</li>
+                        <li>Auto-assignment and transitions</li>
+                        <li>Webhooks and REST API</li>
+                        <li>GitHub/GitLab integration</li>
+                        <li>SLA tracking on issues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- INTEGRATIONS -->
+<section class="integrations-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Connects With</p>
+            <h2 class="section-heading">Better Together</h2>
+            <p class="section-sub">AlohaProject is powerful alone — but it's designed to share data and context with every other AlohaOne platform.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="document.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaDocument</strong>
+                        <span>Attach specs and design files</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="knowledge.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a78bfa,#7c3aed)">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaKnowledge</strong>
+                        <span>Link articles to issues</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="support.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#38bdf8,#0284c7)">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaSupport</strong>
+                        <span>Escalate tickets to engineering</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="case.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#6366f1,#4338ca)">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaCase</strong>
+                        <span>Track case work as tasks</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="agent.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAgent</strong>
+                        <span>AI agents triage and draft tickets</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ecosystem-callout mt-5">
+            <h4>One Platform, Pay For What You Use</h4>
+            <p>AlohaOne is a single platform with capabilities you enable and pay for as you need them. Start with AlohaProject, add more when you're ready.</p>
+            <a href="../index.html#cta" class="btn">Request Early Access</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 mb-3">
+                <h4 class="text-white mb-3" style="font-weight:800">
+                    <span style="background:var(--ao-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlohaOne</span>
+                </h4>
+                <p class="mb-0" style="max-width:280px">
+                    One platform, every tool your business needs.
+                </p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>Platforms</h6>
+                <a href="commerce.html">Commerce</a>
+                <a href="document.html">Document</a>
+                <a href="case.html">Case</a>
+                <a href="project.html">Project</a>
+                <a href="crm.html">CRM</a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>More</h6>
+                <a href="marketing.html">Marketing</a>
+                <a href="email.html">Email</a>
+                <a href="support.html">Support</a>
+                <a href="knowledge.html">Knowledge</a>
+                <a href="agent.html">Agent</a>
+            </div>
+            <div class="col-lg-4">
+                <h6>Get Started</h6>
+                <a href="../index.html#cta">Request Early Access</a>
+                <a href="../index.html#platforms">Browse All Platforms</a>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+            <p class="text-muted">&copy; <span id="footer-year"></span> AlohaOne. All rights reserved.</p>
+            <a href="../index.html" class="text-muted">&larr; Back to home</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
