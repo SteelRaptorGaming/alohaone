@@ -115,7 +115,7 @@ PLATFORMS = {
         },
     ],
     "integrations": [
-        {"slug": "inventory", "name": "AlohaInventory", "note": "Warehouses, BOMs, and stock control"},
+        {"slug": "inventory", "name": "AlohaInventory", "note": "Inventory, parts, and material costing for configurable products"},
         {"slug": "configurator", "name": "AlohaConfigurator", "note": "3D product configuration with live BOMs"},
         {"slug": "drive", "name": "AlohaDrive", "note": "Browse Drive files in your storefront media manager"},
         {"slug": "deliver", "name": "AlohaDeliver", "note": "Last-mile delivery with photo proof"},
@@ -2404,9 +2404,9 @@ PLATFORMS = {
     "icon": "fa-warehouse",
     "gradient": "linear-gradient(135deg,#0891b2,#0e7490)",
     "status": "live",
-    "tagline": "Component-level inventory control, built in.",
-    "description": "Multi-warehouse stock management with deep support for components and configurable products — BOMs, assemblies, cycle counts, and real-time reservations. Already bundled inside AlohaCommerce and ready to toggle on per-tenant.",
-    "overview": "AlohaInventory is already running inside AlohaCommerce — it handles components and configurable components natively, so a product's inventory can be tracked down to the individual parts that make it up. When a customer configures a made-to-order product via AlohaConfigurator, the BOM is resolved against component stock in real time. Toggle it on for any tenant and every SKU gets component-level traceability, multi-location reservations, and assembly workflows.",
+    "tagline": "Inventory, parts, and material costing for configurable products.",
+    "description": "Inventory management, parts tracking, and product material costing — built for configurable products and complex BOMs. Multi-warehouse stock with assemblies, cycle counts, and real-time reservations. Already bundled inside AlohaCommerce and ready to toggle on per-tenant.",
+    "overview": "AlohaInventory handles inventory, parts, and material costing for businesses that build configurable or made-to-order products. Track stock down to the individual parts that make up a finished product, roll up material costs through multi-level BOMs to know your true cost-of-goods on every variant, and resolve component availability in real time when a customer configures a product via AlohaConfigurator. Already running inside AlohaCommerce — toggle it on for any tenant and every SKU gets component-level traceability, multi-location reservations, and assembly workflows.",
     "capabilities": [
         {
             "title": "Multi-Warehouse",
