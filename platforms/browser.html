@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlohaBrowser — AlohaOne</title>
+    <meta name="description" content="The kid-safe browser parents can actually trust.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/platform-detail.css">
+
+    <style>
+        .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <span class="brand-gradient">AlohaOne</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link" href="../index.html#platforms">Platforms</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#why">Why AlohaOne</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#how">How It Works</a></li>
+            </ul>
+            <a href="../index.html#cta" class="btn btn-sm btn-outline-primary rounded-pill px-3">Get Early Access</a>
+        </div>
+    </div>
+</nav>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero">
+    <div class="container detail-hero-content">
+        <a href="../index.html#platforms" class="back-link">
+            <i class="fas fa-arrow-left"></i> All Platforms
+        </a>
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="detail-hero-icon" style="background: linear-gradient(135deg,#38bdf8,#0284c7)">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <div>
+                    <span class="platform-badge badge-coming">Coming Soon</span>
+                </div>
+                <h1>AlohaBrowser</h1>
+                <p class="tagline">The kid-safe browser parents can actually trust.</p>
+                <p class="description">A kid-friendly web browser for iOS and Windows with a curated allowlist, parent-approved sites and YouTube channels, and a full activity dashboard — so kids only reach age-appropriate content and parents always know what's going on.</p>
+                <div class="d-flex flex-wrap gap-2">
+            <a href="../index.html#cta" class="btn btn-hero btn-primary-custom me-2 mb-2">Request Early Access</a>
+            <a href="../index.html#platforms" class="btn btn-hero btn-outline-light mb-2">See All Platforms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="overview-section">
+    <div class="container">
+        <p>AlohaBrowser is a safe-by-default browser built for kids and the parents who love them. Every navigation is checked against a curated allowlist plus the sites and YouTube channels the parent has approved for that child. Parents see every visit and every blocked attempt in a clean dashboard inside AlohaOne — no creepy third-party tracking, no mystery filters, no ads trying to sell your kids something you didn't pick.</p>
+
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Capabilities</p>
+            <h2 class="section-heading">Everything AlohaBrowser Can Do</h2>
+            <p class="section-sub">Deep feature set, but only pay for what you enable. Each capability can be turned on per-org as your needs grow.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#38bdf8,#0284c7)">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h5>Safe By Default</h5>
+                    <ul>
+                        <li>Curated allowlist of kid-safe sites out of the box</li>
+                        <li>Age bands: 5-8, 9-12, 13+</li>
+                        <li>Safe search enforced on Google, Bing, DuckDuckGo</li>
+                        <li>Block direct URL entry to unapproved sites</li>
+                        <li>Every request filtered before the page loads</li>
+                        <li>Uses Apple's WKWebView on iOS and Microsoft Edge WebView2 on Windows</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h5>Parent Approves</h5>
+                    <ul>
+                        <li>Add any site to your child's allowlist</li>
+                        <li>Approve YouTube channels one-by-one</li>
+                        <li>Per-child profiles and allowlists</li>
+                        <li>Different rules for different ages</li>
+                        <li>Parent PIN gate on settings</li>
+                        <li>Everything editable from the parent dashboard</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h5>Activity Dashboard</h5>
+                    <ul>
+                        <li>Full history of every site visited</li>
+                        <li>Every blocked attempt with the URL</li>
+                        <li>Time spent per site and per day</li>
+                        <li>Daily and weekly activity reports</li>
+                        <li>Filter by child, device, or date range</li>
+                        <li>Export activity for your records</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#ec4899,#db2777)">
+                        <i class="fas fa-face-smile"></i>
+                    </div>
+                    <h5>Kid-Friendly Experience</h5>
+                    <ul>
+                        <li>Bright, fun interface with big buttons</li>
+                        <li>Pre-loaded bookmarks for education and play</li>
+                        <li>Friendly 'ask a parent' screen when a site is blocked</li>
+                        <li>No scary error messages</li>
+                        <li>Works on iPhone, iPad, and Windows</li>
+                        <li>One login for every device</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706)">
+                        <i class="fas fa-arrows-rotate"></i>
+                    </div>
+                    <h5>Cross-Device Profiles</h5>
+                    <ul>
+                        <li>Cloud-synced child profiles follow the kid everywhere</li>
+                        <li>Approve a site once, it works on every device</li>
+                        <li>Activity rolls up across all devices</li>
+                        <li>Sign in with your AlohaOne account</li>
+                        <li>Managed by the parent, not the child</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="capability-group">
+                    <div class="capability-group-icon" style="background: linear-gradient(135deg,#06b6d4,#0891b2)">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h5>Privacy You Control</h5>
+                    <ul>
+                        <li>No ad networks, no third-party tracking</li>
+                        <li>Activity stored only in your AlohaOne account</li>
+                        <li>You decide how long history is kept</li>
+                        <li>Delete a child's data in one click</li>
+                        <li>Encrypted in transit between device and AlohaOne</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="pricing-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Pricing</p>
+            <h2 class="section-heading">Safer browsing, priced for families</h2>
+            <p class="section-sub">The basics are free forever. Upgrade for multi-child management, advanced reports, and priority support.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card">
+                    <h5>Starter</h5>
+                    <div class="price">$0</div>
+                    <p class="period">free forever</p>
+                    <ul>
+                        <li>1 child profile</li>
+                        <li>Curated allowlist + parent-added sites</li>
+                        <li>Approved YouTube channels</li>
+                        <li>Daily activity summary</li>
+                        <li>iOS and Windows apps</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=browser&intent=register&tier=starter" class="btn">Join the Waitlist</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card featured">
+                    <h5>Family</h5>
+                    <div class="price">$6.95</div>
+                    <p class="period">per month, billed annually</p>
+                    <ul>
+                        <li>Up to 6 child profiles</li>
+                        <li>Per-child allowlists and age bands</li>
+                        <li>Full activity timeline with filters</li>
+                        <li>Weekly email reports</li>
+                        <li>Priority email support</li>
+                        <li>Unlimited devices per child</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=browser&intent=register&tier=family" class="btn">Join the Waitlist</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="pricing-card">
+                    <h5>Family Plus</h5>
+                    <div class="price">$12.95</div>
+                    <p class="period">per month, billed annually</p>
+                    <ul>
+                        <li>Everything in Family, plus:</li>
+                        <li>Unlimited child profiles</li>
+                        <li>Multi-parent shared management</li>
+                        <li>Approval requests via AlohaMessage</li>
+                        <li>Extended activity history</li>
+                        <li>Printable family activity reports</li>
+                    </ul>
+                    <a href="../../AlohaOneApp/index.html?platform=browser&intent=register&tier=plus" class="btn">Join the Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="integrations-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section-label">Connects With</p>
+            <h2 class="section-heading">Better Together</h2>
+            <p class="section-sub">AlohaBrowser is powerful alone — but it's designed to share data and context with every other AlohaOne platform.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="assistant.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a855f7,#7e22ce)">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaAssistant</strong>
+                        <span>Ask by voice what your kid is doing online</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="message.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#06b6d4,#0891b2)">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaMessage</strong>
+                        <span>Approval requests and alerts land in your unified inbox</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="knowledge.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#a78bfa,#7c3aed)">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaKnowledge</strong>
+                        <span>Publish curated reading lists kids can browse safely</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <a href="training.html" class="integration-card">
+                    <div class="integration-card-icon" style="background: linear-gradient(135deg,#4ade80,#16a34a)">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="integration-card-body">
+                        <strong>AlohaTraining</strong>
+                        <span>Let kids take AlohaTraining courses through AlohaBrowser</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ecosystem-callout mt-5">
+            <h4>One Platform, Pay For What You Use</h4>
+            <p>AlohaOne is a single platform with capabilities you enable and pay for as you need them. Start with AlohaBrowser, add more when you're ready.</p>
+            <a href="../index.html#cta" class="btn">Request Early Access</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 mb-3">
+                <h4 class="text-white mb-3" style="font-weight:800">
+                    <span style="background:var(--ao-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlohaOne</span>
+                </h4>
+                <p class="mb-0" style="max-width:280px">
+                    One platform, every tool your business needs.
+                </p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>Platforms</h6>
+                <a href="commerce.html">Commerce</a>
+                <a href="document.html">Document</a>
+                <a href="case.html">Case</a>
+                <a href="project.html">Project</a>
+                <a href="crm.html">CRM</a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>More</h6>
+                <a href="marketing.html">Marketing</a>
+                <a href="email.html">Email</a>
+                <a href="support.html">Support</a>
+                <a href="knowledge.html">Knowledge</a>
+                <a href="agent.html">Agent</a>
+            </div>
+            <div class="col-lg-4">
+                <h6>Get Started</h6>
+                <a href="../index.html#cta">Request Early Access</a>
+                <a href="../index.html#platforms">Browse All Platforms</a>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+            <p class="text-muted">&copy; <span id="footer-year"></span> AlohaOne. All rights reserved.</p>
+            <a href="../index.html" class="text-muted">&larr; Back to home</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

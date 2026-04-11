@@ -115,6 +115,9 @@ const PLATFORMS = [
 
     // Bottom — foundation
     { slug: 'search',       name: 'Search',       icon: 'fa-magnifying-glass', color: '#5eead4', x: 310, y: 610 },
+
+    // Lower-left wing
+    { slug: 'browser',      name: 'Browser',      icon: 'fa-compass',         color: '#38bdf8', x: 90,  y: 560 },
 ];
 
 function renderBrainViz() {

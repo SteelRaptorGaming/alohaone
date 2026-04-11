@@ -3651,6 +3651,153 @@ PLATFORMS = {
     },
 },
 
+# ---------------- AlohaBrowser ----------------
+"browser": {
+    "name": "AlohaBrowser",
+    "icon": "fa-compass",
+    "gradient": "linear-gradient(135deg,#38bdf8,#0284c7)",
+    "status": "coming",
+    "tagline": "The kid-safe browser parents can actually trust.",
+    "description": "A kid-friendly web browser for iOS and Windows with a curated allowlist, parent-approved sites and YouTube channels, and a full activity dashboard — so kids only reach age-appropriate content and parents always know what's going on.",
+    "overview": "AlohaBrowser is a safe-by-default browser built for kids and the parents who love them. Every navigation is checked against a curated allowlist plus the sites and YouTube channels the parent has approved for that child. Parents see every visit and every blocked attempt in a clean dashboard inside AlohaOne — no creepy third-party tracking, no mystery filters, no ads trying to sell your kids something you didn't pick.",
+    "capabilities": [
+        {
+            "title": "Safe By Default",
+            "icon": "fa-shield-halved",
+            "gradient": "linear-gradient(135deg,#38bdf8,#0284c7)",
+            "items": [
+                "Curated allowlist of kid-safe sites out of the box",
+                "Age bands: 5-8, 9-12, 13+",
+                "Safe search enforced on Google, Bing, DuckDuckGo",
+                "Block direct URL entry to unapproved sites",
+                "Every request filtered before the page loads",
+                "Uses Apple's WKWebView on iOS and Microsoft Edge WebView2 on Windows",
+            ]
+        },
+        {
+            "title": "Parent Approves",
+            "icon": "fa-user-check",
+            "gradient": "linear-gradient(135deg,#8b5cf6,#7c3aed)",
+            "items": [
+                "Add any site to your child's allowlist",
+                "Approve YouTube channels one-by-one",
+                "Per-child profiles and allowlists",
+                "Different rules for different ages",
+                "Parent PIN gate on settings",
+                "Everything editable from the parent dashboard",
+            ]
+        },
+        {
+            "title": "Activity Dashboard",
+            "icon": "fa-chart-line",
+            "gradient": "linear-gradient(135deg,#10b981,#059669)",
+            "items": [
+                "Full history of every site visited",
+                "Every blocked attempt with the URL",
+                "Time spent per site and per day",
+                "Daily and weekly activity reports",
+                "Filter by child, device, or date range",
+                "Export activity for your records",
+            ]
+        },
+        {
+            "title": "Kid-Friendly Experience",
+            "icon": "fa-face-smile",
+            "gradient": "linear-gradient(135deg,#ec4899,#db2777)",
+            "items": [
+                "Bright, fun interface with big buttons",
+                "Pre-loaded bookmarks for education and play",
+                "Friendly 'ask a parent' screen when a site is blocked",
+                "No scary error messages",
+                "Works on iPhone, iPad, and Windows",
+                "One login for every device",
+            ]
+        },
+        {
+            "title": "Cross-Device Profiles",
+            "icon": "fa-arrows-rotate",
+            "gradient": "linear-gradient(135deg,#f59e0b,#d97706)",
+            "items": [
+                "Cloud-synced child profiles follow the kid everywhere",
+                "Approve a site once, it works on every device",
+                "Activity rolls up across all devices",
+                "Sign in with your AlohaOne account",
+                "Managed by the parent, not the child",
+            ]
+        },
+        {
+            "title": "Privacy You Control",
+            "icon": "fa-lock",
+            "gradient": "linear-gradient(135deg,#06b6d4,#0891b2)",
+            "items": [
+                "No ad networks, no third-party tracking",
+                "Activity stored only in your AlohaOne account",
+                "You decide how long history is kept",
+                "Delete a child's data in one click",
+                "Encrypted in transit between device and AlohaOne",
+            ]
+        },
+    ],
+    "integrations": [
+        {"slug": "assistant", "name": "AlohaAssistant", "note": "Ask by voice what your kid is doing online"},
+        {"slug": "message", "name": "AlohaMessage", "note": "Approval requests and alerts land in your unified inbox"},
+        {"slug": "knowledge", "name": "AlohaKnowledge", "note": "Publish curated reading lists kids can browse safely"},
+        {"slug": "training", "name": "AlohaTraining", "note": "Let kids take AlohaTraining courses through AlohaBrowser"},
+    ],
+    "pricing": {
+        "label": "Pricing",
+        "heading": "Safer browsing, priced for families",
+        "sub": "The basics are free forever. Upgrade for multi-child management, advanced reports, and priority support.",
+        "tiers": [
+            {
+                "name": "Starter",
+                "price": "$0",
+                "period": "free forever",
+                "cta_label": "Join the Waitlist",
+                "cta_href": "../../AlohaOneApp/index.html?platform=browser&intent=register&tier=starter",
+                "features": [
+                    "1 child profile",
+                    "Curated allowlist + parent-added sites",
+                    "Approved YouTube channels",
+                    "Daily activity summary",
+                    "iOS and Windows apps",
+                ],
+            },
+            {
+                "name": "Family",
+                "price": "$6.95",
+                "period": "per month, billed annually",
+                "featured": True,
+                "cta_label": "Join the Waitlist",
+                "cta_href": "../../AlohaOneApp/index.html?platform=browser&intent=register&tier=family",
+                "features": [
+                    "Up to 6 child profiles",
+                    "Per-child allowlists and age bands",
+                    "Full activity timeline with filters",
+                    "Weekly email reports",
+                    "Priority email support",
+                    "Unlimited devices per child",
+                ],
+            },
+            {
+                "name": "Family Plus",
+                "price": "$12.95",
+                "period": "per month, billed annually",
+                "cta_label": "Join the Waitlist",
+                "cta_href": "../../AlohaOneApp/index.html?platform=browser&intent=register&tier=plus",
+                "features": [
+                    "Everything in Family, plus:",
+                    "Unlimited child profiles",
+                    "Multi-parent shared management",
+                    "Approval requests via AlohaMessage",
+                    "Extended activity history",
+                    "Printable family activity reports",
+                ],
+            },
+        ],
+    },
+},
+
 }  # end PLATFORMS
 
 
