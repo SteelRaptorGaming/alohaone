@@ -37,25 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-    // ---- Early access form ----
-    document.querySelectorAll('.early-access-form').forEach(form => {
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const input = form.querySelector('input[type="email"]');
-            const btn = form.querySelector('button');
-            const email = input.value.trim();
-            if (!email) return;
-
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fas fa-check me-1"></i> You\'re on the list!';
-            btn.classList.replace('btn-primary-custom', 'btn-success');
-            input.disabled = true;
-
-            // TODO: POST to API endpoint
-            console.log('Early access signup:', email);
-        });
-    });
-
     // ---- Year in footer ----
     const yearEl = document.getElementById('footer-year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();

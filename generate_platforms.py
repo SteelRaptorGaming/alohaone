@@ -231,7 +231,7 @@ PLATFORMS = {
                 "price": "Custom",
                 "period": "white-glove onboarding",
                 "cta_label": "Contact Us",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Multi-Store",
                     "Dedicated onboarding",
@@ -397,7 +397,7 @@ PLATFORMS = {
                 "price": "$24.95",
                 "period": "per user / month",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Unlimited storage (fair use)",
@@ -553,7 +553,7 @@ PLATFORMS = {
                 "price": "$109",
                 "period": "per user / month",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Trust accounting (IOLTA-compliant)",
@@ -686,7 +686,7 @@ PLATFORMS = {
                 "price": "$2,499",
                 "period": "per month",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "30 configurators",
@@ -958,7 +958,7 @@ PLATFORMS = {
         {"slug": "crm", "name": "AlohaCRM", "note": "Attach files to contact and company records"},
     ],
     "cta": {
-        "primary_label": "Join the Waitlist",
+        "primary_label": "Register Free Now",
         "primary_href": "../../AlohaOneApp/index.html?platform=drive&intent=register",
         "secondary_label": "Compare with Backup",
         "secondary_href": "backup.html",
@@ -985,7 +985,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=drive&intent=register&tier=free",
                 "features": [
                     "Up to 5 users",
@@ -1003,7 +1003,7 @@ PLATFORMS = {
                 "price": "$9.95",
                 "period": "per user / month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=drive&intent=register&tier=pro",
                 "features": [
                     "Unlimited users",
@@ -1023,7 +1023,7 @@ PLATFORMS = {
                 "price": "$17.95",
                 "period": "per user / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "5 TB per user pooled (or as much as you need)",
@@ -1041,8 +1041,8 @@ PLATFORMS = {
     },
     "final_cta": {
         "heading": "Cloud storage built for business — without the Google overhead.",
-        "sub": "Drag your files in. Mount your Drive as a disk. Share folders with your team. Reference your assets straight from your AlohaCMS and AlohaCommerce sites. AlohaDrive is launching soon — join the waitlist and we'll let you know the moment it goes live.",
-        "primary_label": "Join the Waitlist",
+        "sub": "Drag your files in. Mount your Drive as a disk. Share folders with your team. Reference your assets straight from your AlohaCMS and AlohaCommerce sites. AlohaDrive is launching soon — register now and we'll let you know the moment it goes live.",
+        "primary_label": "Register Free Now",
         "primary_href": "../../AlohaOneApp/index.html?platform=drive&intent=register",
         "secondary_label": "How is this different from AlohaBackup?",
         "secondary_href": "backup.html",
@@ -1147,7 +1147,7 @@ PLATFORMS = {
         {"slug": "search", "name": "AlohaSearch", "note": "Search across pages and blog content"},
     ],
     "cta": {
-        "primary_label": "Join the Waitlist",
+        "primary_label": "Register Free Now",
         "primary_href": "../../AlohaOneApp/index.html?platform=cms&intent=register",
         "secondary_label": "See AlohaCommerce",
         "secondary_href": "commerce.html",
@@ -1161,7 +1161,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=cms&intent=register&tier=starter",
                 "features": [
                     "1 site on aloha.one subdomain",
@@ -1178,7 +1178,7 @@ PLATFORMS = {
                 "price": "$23.95",
                 "period": "per site / month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=cms&intent=register&tier=pro",
                 "features": [
                     "1 site, custom domain, managed SSL",
@@ -1197,7 +1197,7 @@ PLATFORMS = {
                 "price": "$78.95",
                 "period": "per site / month + custom above 10 sites",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Multi-site (10 included)",
@@ -1370,7 +1370,7 @@ PLATFORMS = {
                 "price": "$98.95",
                 "period": "per seat / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Custom objects and advanced reporting",
@@ -1503,7 +1503,7 @@ PLATFORMS = {
                 "price": "$249",
                 "period": "per month",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Unlimited tracked revenue",
@@ -1601,7 +1601,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=marketing&intent=register&tier=starter",
                 "features": [
                     "500 contacts",
@@ -1617,7 +1617,7 @@ PLATFORMS = {
                 "price": "$38.95",
                 "period": "per month at 500 contacts (scales with contacts)",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=marketing&intent=register&tier=pro",
                 "features": [
                     "Unlimited sends via AlohaEmail",
@@ -1634,7 +1634,7 @@ PLATFORMS = {
                 "price": "$450",
                 "period": "per month base",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "50,000+ contacts",
@@ -1734,7 +1734,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=email&intent=register&tier=starter",
                 "features": [
                     "3,000 emails / month",
@@ -1749,7 +1749,7 @@ PLATFORMS = {
                 "price": "$24.95",
                 "period": "per month",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=email&intent=register&tier=pro",
                 "features": [
                     "50,000 emails / month",
@@ -1766,7 +1766,7 @@ PLATFORMS = {
                 "price": "$150",
                 "period": "per month base + usage",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "500,000+ emails / month",
                     "Multiple dedicated IPs",
@@ -1859,7 +1859,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=survey&intent=register&tier=starter",
                 "features": [
                     "Unlimited forms",
@@ -1875,7 +1875,7 @@ PLATFORMS = {
                 "price": "$28.95",
                 "period": "per month",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=survey&intent=register&tier=pro",
                 "features": [
                     "10,000 responses / month",
@@ -1892,7 +1892,7 @@ PLATFORMS = {
                 "price": "$98.95",
                 "period": "per month",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Unlimited responses",
@@ -1996,7 +1996,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=support&intent=register&tier=starter",
                 "features": [
                     "3 agents",
@@ -2012,7 +2012,7 @@ PLATFORMS = {
                 "price": "$34.95",
                 "period": "per agent / month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=support&intent=register&tier=pro",
                 "features": [
                     "Unlimited tickets",
@@ -2029,7 +2029,7 @@ PLATFORMS = {
                 "price": "$78.95",
                 "period": "per agent / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Custom roles and permissions",
@@ -2127,7 +2127,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=knowledge&intent=register&tier=starter",
                 "features": [
                     "Up to 10 users",
@@ -2144,7 +2144,7 @@ PLATFORMS = {
                 "price": "$7.95",
                 "period": "per user / month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=knowledge&intent=register&tier=pro",
                 "features": [
                     "Unlimited users",
@@ -2161,7 +2161,7 @@ PLATFORMS = {
                 "price": "$15.95",
                 "period": "per user / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Use our encryption keys or bring your own (BYOK)",
@@ -2254,7 +2254,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=training&intent=register&tier=starter",
                 "features": [
                     "5 active learners / month",
@@ -2270,7 +2270,7 @@ PLATFORMS = {
                 "price": "$78.95",
                 "period": "per month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=training&intent=register&tier=pro",
                 "features": [
                     "Up to 100 active learners / month",
@@ -2289,7 +2289,7 @@ PLATFORMS = {
                 "price": "$1.95",
                 "period": "per active learner / month (100-learner minimum)",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Unlimited admins, courses, content",
                     "Use our encryption keys or bring your own (BYOK)",
@@ -2388,7 +2388,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=project&intent=register&tier=starter",
                 "features": [
                     "Up to 10 users",
@@ -2404,7 +2404,7 @@ PLATFORMS = {
                 "price": "$8.95",
                 "period": "per user / month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=project&intent=register&tier=pro",
                 "features": [
                     "Unlimited users, issues, and projects",
@@ -2421,7 +2421,7 @@ PLATFORMS = {
                 "price": "$17.95",
                 "period": "per user / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Unlimited automation runs",
@@ -2586,7 +2586,7 @@ PLATFORMS = {
                 "price": "$799",
                 "period": "per month",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Unlimited users and locations",
@@ -2709,7 +2709,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=deliver&intent=register&tier=starter",
                 "features": [
                     "1 driver",
@@ -2725,7 +2725,7 @@ PLATFORMS = {
                 "price": "$58.95",
                 "period": "per driver / month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=deliver&intent=register&tier=pro",
                 "features": [
                     "3-driver minimum",
@@ -2743,7 +2743,7 @@ PLATFORMS = {
                 "price": "$88.95",
                 "period": "per driver / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Unlimited dispatchers",
@@ -2867,7 +2867,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=social&intent=register&tier=starter",
                 "features": [
                     "3 social accounts",
@@ -2882,7 +2882,7 @@ PLATFORMS = {
                 "price": "$28.95",
                 "period": "per month",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=social&intent=register&tier=pro",
                 "features": [
                     "15 social accounts",
@@ -2899,7 +2899,7 @@ PLATFORMS = {
                 "price": "$149",
                 "period": "per user / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "Unlimited social accounts",
@@ -3021,7 +3021,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0/mo + $0.13/min",
                 "period": "at our cost — try it risk-free",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=assistant&intent=register&tier=starter",
                 "features": [
                     "60 free trial minutes upon signup",
@@ -3038,7 +3038,7 @@ PLATFORMS = {
                 "price": "$198.95/mo + $0.14/min",
                 "period": "1,500 minutes included",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=assistant&intent=register&tier=pro",
                 "features": [
                     "1,500 minutes included per month",
@@ -3055,7 +3055,7 @@ PLATFORMS = {
                 "price": "$699/mo + $0.11/min",
                 "period": "10,000 minutes included",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "10,000 minutes included per month",
                     "100+ concurrent calls",
@@ -3181,7 +3181,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=message&intent=register&tier=starter",
                 "features": [
                     "2 users",
@@ -3197,7 +3197,7 @@ PLATFORMS = {
                 "price": "$21.95",
                 "period": "per user / month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=message&intent=register&tier=pro",
                 "features": [
                     "Unlimited channels (SMS, WhatsApp, Instagram, Facebook, Etsy, chat, forms)",
@@ -3213,7 +3213,7 @@ PLATFORMS = {
                 "price": "$47.95",
                 "period": "per user / month, billed annually",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "SAML SSO and SCIM provisioning",
@@ -3336,7 +3336,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=data&intent=register&tier=starter",
                 "features": [
                     "5 GB storage",
@@ -3352,7 +3352,7 @@ PLATFORMS = {
                 "price": "$299",
                 "period": "per month",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=data&intent=register&tier=pro",
                 "features": [
                     "250 GB storage included",
@@ -3368,7 +3368,7 @@ PLATFORMS = {
                 "price": "$1,499",
                 "period": "per month",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "2 TB storage included",
                     "1,500 compute-hours / month included",
@@ -3600,7 +3600,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=agent&intent=register&tier=starter",
                 "features": [
                     "1 seat",
@@ -3616,7 +3616,7 @@ PLATFORMS = {
                 "price": "$48.95",
                 "period": "per seat / month, billed annually (3-seat minimum)",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=agent&intent=register&tier=pro",
                 "features": [
                     "Unlimited agents",
@@ -3634,7 +3634,7 @@ PLATFORMS = {
                 "price": "$149",
                 "period": "per seat / month, billed annually (5-seat minimum)",
                 "cta_label": "Contact Sales",
-                "cta_href": "../index.html#cta",
+                "cta_href": "../../AlohaOneApp/register.html",
                 "features": [
                     "Everything in Pro, plus:",
                     "10,000 runs / seat / month included",
@@ -3753,7 +3753,7 @@ PLATFORMS = {
                 "name": "Starter",
                 "price": "$0",
                 "period": "free forever",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=browser&intent=register&tier=starter",
                 "features": [
                     "1 child profile",
@@ -3768,7 +3768,7 @@ PLATFORMS = {
                 "price": "$6.95",
                 "period": "per month, billed annually",
                 "featured": True,
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=browser&intent=register&tier=family",
                 "features": [
                     "Up to 6 child profiles",
@@ -3783,7 +3783,7 @@ PLATFORMS = {
                 "name": "Family Plus",
                 "price": "$12.95",
                 "period": "per month, billed annually",
-                "cta_label": "Join the Waitlist",
+                "cta_label": "Register Free Now",
                 "cta_href": "../../AlohaOneApp/index.html?platform=browser&intent=register&tier=plus",
                 "features": [
                     "Everything in Family, plus:",
@@ -3854,7 +3854,7 @@ def render_cta(p):
     if cta:
         return f"""            <a href="{cta['primary_href']}" class="btn btn-hero btn-primary-custom me-2 mb-2">{cta['primary_label']}</a>
             <a href="{cta['secondary_href']}" class="btn btn-hero btn-outline-light mb-2">{cta['secondary_label']}</a>"""
-    return """            <a href="../index.html#cta" class="btn btn-hero btn-primary-custom me-2 mb-2">Request Early Access</a>
+    return """            <a href="../../AlohaOneApp/register.html" class="btn btn-hero btn-primary-custom me-2 mb-2">Register Free Now</a>
             <a href="../index.html#platforms" class="btn btn-hero btn-outline-light mb-2">See All Platforms</a>"""
 
 
@@ -4036,7 +4036,7 @@ TEMPLATE = """<!DOCTYPE html>
                 <li class="nav-item"><a class="nav-link" href="../index.html#why">Why AlohaOne</a></li>
                 <li class="nav-item"><a class="nav-link" href="../index.html#how">How It Works</a></li>
             </ul>
-            <a href="../index.html#cta" class="btn btn-sm btn-outline-primary rounded-pill px-3">Get Early Access</a>
+            <a href="../../AlohaOneApp/register.html" class="btn btn-sm btn-outline-primary rounded-pill px-3">Register Free Now</a>
         </div>
     </div>
 </nav>
@@ -4107,7 +4107,7 @@ TEMPLATE = """<!DOCTYPE html>
         <div class="ecosystem-callout mt-5">
             <h4>One Platform, Pay For What You Use</h4>
             <p>AlohaOne is a single platform with capabilities you enable and pay for as you need them. Start with {name}, add more when you're ready.</p>
-            <a href="../index.html#cta" class="btn">Request Early Access</a>
+            <a href="../../AlohaOneApp/register.html" class="btn">Register Free Now</a>
         </div>
     </div>
 </section>
@@ -4144,7 +4144,7 @@ TEMPLATE = """<!DOCTYPE html>
             </div>
             <div class="col-lg-4">
                 <h6>Get Started</h6>
-                <a href="../index.html#cta">Request Early Access</a>
+                <a href="../../AlohaOneApp/register.html">Register Free Now</a>
                 <a href="../index.html#platforms">Browse All Platforms</a>
             </div>
         </div>
