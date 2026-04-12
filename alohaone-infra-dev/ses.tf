@@ -41,16 +41,44 @@ resource "aws_ses_domain_identity_verification" "alohaone" {
   depends_on = [aws_route53_record.ses_dkim]
 }
 
-# SPF record. Authorizes Amazon SES to send mail on behalf of alohaone.ai.
-# The `~all` policy is soft-fail — recipient servers will accept but mark
-# unauthorized senders as suspicious. Tighten to `-all` once we're confident
-# no other senders need to act as alohaone.ai.
+# Apex TXT record. Holds multiple TXT strings at the zone apex — Route53
+# treats these as a single TXT RRset with multiple values, so every new
+# apex TXT has to be added to this one resource's `records` list rather
+# than a new aws_route53_record (which would conflict on name+type).
+#
+# Current apex TXT strings:
+#   1. SPF — authorizes Amazon SES to send mail on behalf of alohaone.ai.
+#      `~all` is soft-fail; tighten to `-all` once we're sure no other
+#      senders need to act as alohaone.ai.
+#   2. Microsoft 365 domain ownership verification — proves alohaone.ai
+#      belongs to the UltimateCraftDesk / Visual Data Software M365 tenant
+#      so support@alohaone.ai can become a real Exchange Online mailbox
+#      (bidirectional mail, not just outbound via SES).
 resource "aws_route53_record" "ses_spf" {
   zone_id = local.zone_id
   name    = var.domain_name
   type    = "TXT"
   ttl     = 600
-  records = ["v=spf1 include:amazonses.com ~all"]
+  records = [
+    "v=spf1 include:amazonses.com ~all",
+    "MS=ms44197346",
+  ]
+}
+
+# DMARC policy. Microsoft 365 (which hosts a lot of our target customers'
+# inboxes) quarantines mail from new-domain senders that don't publish DMARC,
+# so we need at least a permissive `p=none` record to avoid silently landing
+# in junk. `rua` routes aggregate reports to an inbox we own so we can watch
+# for auth failures during the first weeks of sending.
+#
+# Start with p=none (monitor mode) and tighten to p=quarantine or p=reject
+# after we've verified every legitimate sending path is SPF/DKIM-aligned.
+resource "aws_route53_record" "ses_dmarc" {
+  zone_id = local.zone_id
+  name    = "_dmarc.${var.domain_name}"
+  type    = "TXT"
+  ttl     = 600
+  records = ["v=DMARC1; p=none; rua=mailto:support@alohaone.ai; fo=1"]
 }
 
 output "ses_domain_identity_arn" {
