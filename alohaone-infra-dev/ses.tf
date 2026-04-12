@@ -47,22 +47,58 @@ resource "aws_ses_domain_identity_verification" "alohaone" {
 # than a new aws_route53_record (which would conflict on name+type).
 #
 # Current apex TXT strings:
-#   1. SPF — authorizes Amazon SES to send mail on behalf of alohaone.ai.
-#      `~all` is soft-fail; tighten to `-all` once we're sure no other
-#      senders need to act as alohaone.ai.
-#   2. Microsoft 365 domain ownership verification — proves alohaone.ai
-#      belongs to the UltimateCraftDesk / Visual Data Software M365 tenant
-#      so support@alohaone.ai can become a real Exchange Online mailbox
-#      (bidirectional mail, not just outbound via SES).
+#   1. SPF — unified sender policy that authorizes BOTH:
+#        * Amazon SES (transactional mail from the Lambda — welcome,
+#          billing, order confirmation, etc.)
+#        * GoDaddy / M365 Exchange Online (user-sent mail from Outlook
+#          when support@alohaone.ai is a real mailbox)
+#      Using `~all` (soft-fail) during the transition period with two
+#      independent senders. Tighten to `-all` once everything is settled.
+#   2. MS= domain ownership verification for Microsoft 365 tenant.
 resource "aws_route53_record" "ses_spf" {
   zone_id = local.zone_id
   name    = var.domain_name
   type    = "TXT"
   ttl     = 600
   records = [
-    "v=spf1 include:amazonses.com ~all",
+    "v=spf1 include:amazonses.com include:secureserver.net ~all",
     "MS=ms44197346",
   ]
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Microsoft 365 / GoDaddy Email records
+# ─────────────────────────────────────────────────────────────────────────────
+# These records complete the M365 mail setup for alohaone.ai so that
+# support@alohaone.ai (and any future @alohaone.ai addresses) become real
+# Exchange Online mailboxes — inbound mail lands in Outlook, replies work,
+# calendar invites resolve, and Outlook clients auto-discover settings.
+#
+# NOTE: per GoDaddy/M365 guidance, any pre-existing MX records must be
+# removed before email will start working. We had none.
+
+resource "aws_route53_record" "m365_mx" {
+  zone_id = local.zone_id
+  name    = var.domain_name
+  type    = "MX"
+  ttl     = 600
+  records = ["0 alohaone-ai.mail.protection.outlook.com"]
+}
+
+resource "aws_route53_record" "m365_autodiscover" {
+  zone_id = local.zone_id
+  name    = "autodiscover.${var.domain_name}"
+  type    = "CNAME"
+  ttl     = 600
+  records = ["autodiscover.outlook.com"]
+}
+
+resource "aws_route53_record" "m365_email" {
+  zone_id = local.zone_id
+  name    = "email.${var.domain_name}"
+  type    = "CNAME"
+  ttl     = 600
+  records = ["email.secureserver.net"]
 }
 
 # DMARC policy. Microsoft 365 (which hosts a lot of our target customers'
